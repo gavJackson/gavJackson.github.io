@@ -1,0 +1,126 @@
+
+.navigation{
+	//.gradient(linear; @orange, @darkOrange 50%; 0deg);
+	background-color: black;
+	box-sizing: border-box;
+	padding: 0px;
+	position: fixed;
+	top: @headerHeight;
+	bottom: 0px;
+	width: @navWidth;
+	margin-left: -@navWidth;
+	z-index: 3;
+
+	border-right: 2px solid white;
+}
+
+	.nav-list, .nav-item{
+		padding: 0px;
+		margin: 0px;
+
+		a{
+			color: white;
+			text-decoration: none;
+			display: block;
+			padding: 10px;
+		}
+	}
+
+	.nav-item{
+		a{
+			font-family: jeff-script;
+		}
+		//.transition(all, 0.25s);
+		list-style: none;
+
+		border-bottom: 1px solid fade(white, 25%);
+		cursor: pointer;
+		position: relative;
+
+		&:hover{
+			background-color: @orange;
+		}
+
+		&.selected{
+			.gradient(linear; @lightGrey, white 50%; 135deg);
+
+			background-color: white;
+			a{
+				color: black;
+				cursor: default;
+			}
+
+			&:after{
+				content: '';
+				display: block;
+				//margin-right: -22px;
+				position: absolute;
+				right: -10px;
+				top: 12px;
+				border-top: 10px solid transparent;
+				border-bottom: 10px solid transparent;
+
+				border-left: 10px solid white;
+			}
+		}
+
+		&:hover:not(.selected){
+			color: @yellow;
+		}
+	}
+	.navigation-footer{
+		display: none;
+		text-align: center;
+		font-size: 13px;
+		text-transform: uppercase;
+	}
+
+	@media (min-height: 600px) {
+		.navigation-footer{
+			position: absolute;
+			bottom: 10px;
+			display: block;
+		}
+
+	}
+
+
+///////////////////////////////////////////////////////////
+//
+// responsive
+//
+///////////////////////////////////////////////////////////
+
+@media (max-width: @phoneWidth) {
+	.navigation {
+		display: none;
+
+		&.open{
+			display: block;
+			margin-left: 0px;
+		}
+
+	}
+}
+
+///////////////////////////////////////////////////////////
+//
+// mobile menu
+//
+///////////////////////////////////////////////////////////
+
+.black-out{
+	background-color: fade(black, 60%);
+
+	display: none;
+	position: fixed;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	z-index: 2;
+
+	&.open{
+		display: block;
+	}
+}

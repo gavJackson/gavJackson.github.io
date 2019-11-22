@@ -1,0 +1,223 @@
+///////////////////////////////////////////////////////////
+//
+// main contents
+//
+///////////////////////////////////////////////////////////
+
+.page-content{
+	padding: 20px;
+	background-color: black;
+	background-image: url('../assets/images/contentBackground.jpg');
+	background-repeat: no-repeat;
+	background-position: top right;
+
+	border-top: 2px solid white;
+
+	@media (min-height: 800px) {
+		header.book-title {
+			position: sticky;
+			top: 0px;
+			background-color: black;
+			z-index: 1;
+
+			@media (max-width: @desktopWidth) {
+				top: @headerHeight;
+			}
+		}
+	}
+
+	//@media (max-width: @desktopWidth) {
+	//	overflow: hidden;
+	//}
+	@media (min-width: @desktopWidth) {
+		padding-bottom: 200px;
+	}
+}
+
+// only when JS
+body.loaded{
+
+
+}
+
+///////////////////////////////
+// header
+///////////////////////////////
+
+h1{
+	font-family: @headerFont;
+	font-size: 68px;
+	text-transform: uppercase;
+
+	margin-top: 30px;
+}
+	.reflection{
+		.gradient-text(white, @lightGrey);
+
+		font-family: @bodyFont;
+		font-size: 53px;
+		display: block;
+		margin-bottom: -20px;
+	}
+
+	.sophie{
+		.gradient-text(@yellow, @darkYellow);
+
+		display: block;
+	}
+
+
+h2{
+	.gradient-text(@yellow, @darkYellow);
+
+	font-size: 48px;
+	margin-top: 30px;
+}
+
+h3{
+	font-family: @headerFont;
+	font-size: 28px;
+	text-transform: uppercase;
+
+	margin-top: 10px;
+}
+
+h4{
+	//.gradient-text(@yellow, @darkYellow);
+	color: @yellow;
+
+	font-size: 23px;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+.home-header{
+	display: none;
+}
+
+
+///////////////////////////////
+// content
+///////////////////////////////
+
+.intro, strong, a {
+	font-family: @headerFont;
+}
+
+.intro{
+	color: @orange;
+	font-size: 20px;
+	line-height: 30px;
+}
+
+strong, a{
+	color: @yellow;
+}
+
+p{
+	font-family: fira-sans; //@bodyFont; //"ParagraphFont", "Times New Roman";
+	font-size: 16px;
+	line-height: 22px;
+	margin-bottom: 20px;
+	font-weight: normal;
+}
+
+body.loaded{
+	.content{
+		display: none;
+	}
+}
+
+a.anchor{
+	visibility: hidden;
+}
+
+///////////////////////////////
+// reviews
+///////////////////////////////
+
+
+.stars{
+	color: @orange;
+	font-size: 60px;
+	margin-top: -10px;
+	margin-bottom: -20px;
+	margin-left: -5px;
+}
+
+.reviewer{
+	font-family: @bodyFont;
+}
+
+///////////////////////////////
+// contact
+///////////////////////////////
+
+#mc_embed_signup form{
+	background-color: black;
+	padding: 0px !important;
+}
+
+#mc_embed_signup .button{
+	.rounded(5px);
+
+	cursor: pointer;
+	padding: 15px 20px;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-family: @bodyFont;
+	border: none;
+	background-color: white;
+	color: black;
+
+	&:hover{
+		background-color: @yellow;
+	}
+}
+
+///////////////////////////////
+// buy
+///////////////////////////////
+
+.book-preview-container{
+	.rounded(5px);
+
+	background-color: white;
+	padding: 40px 0px;
+	text-align: center;
+}
+
+///////////////////////////////
+// next-page-link
+///////////////////////////////
+
+.next-page-link{
+	margin-top: 60px;
+	display: block;
+	cursor: pointer;
+	color: white;
+	text-decoration: none;
+
+	&:hover{
+		.next{
+			color: @yellow
+		}
+
+		.sub-title{
+			.gradient-text(@yellow, @darkYellow);
+
+		}
+	}
+}
+
+	.next{
+		font-family: @headerFont;
+		font-size: 20px;
+	}
+
+	.sub-title{
+		.gradient-text(white, @lightGrey);
+
+		font-size: 35px;
+
+	}

@@ -1,0 +1,36 @@
+# site settings
+title: LM Barrett
+subtitle: author
+email: lmbarrett.author@gmail.com
+description: Lorraine lives and writes from Jávea, a small seaside town on the beautiful Costa Blanca in Spain.
+baseurl: "/lmbarrett-author" # the subpath of your site, e.g. /blog
+url: http://lmbarrett-author.com/
+author:
+street_address: Arenal Dream
+city: Javea
+state: Alicante
+zip_code: 03783
+country: Spain
+phone:
+
+# homepage tiles
+tiles-source: pages # accepts "posts" or "pages"
+tiles-count: 10
+
+# social settings
+500px_url:
+facebook_url:
+github_url:
+gitlab_url:
+googleplus_url:
+instagram_url:
+linkedin_url:
+pinterest_url:
+slack_url:
+twitter_url:
+
+# build settings
+markdown: kramdown
+
+sass:
+  style: compressed

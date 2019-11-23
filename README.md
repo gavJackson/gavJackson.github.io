@@ -12,7 +12,13 @@ This repository contains the code for LM Barrett's website.
 
 http://www.lmbarrett-author.com/
 
-About this project
+
+Jekyll
+-----
+run `bundle install` in the new directory and finally `bundle exec jekyll serve`. You can now access your brand-new Jekyll site on http://127.0.0.1:4000/. Enjoy!
+
+
+About the micro site in the sophie folder
 ----
 
 This website is an attempt to provide Single Page Application style experience with as little JavaScript code as possible.

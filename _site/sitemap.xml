@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
     <url>
-      <loc>/blog/Masons-Revenge/</loc>
+      <loc>https://lmbarrett-author.com/blog/Masons-Revenge/</loc>
       
         <lastmod>2019-10-01T00:00:00+01:00</lastmod>
       
@@ -11,7 +11,7 @@
     </url>
   
     <url>
-      <loc>/blog/You-Me-And-Other-Stuff/</loc>
+      <loc>https://lmbarrett-author.com/blog/You-Me-And-Other-Stuff/</loc>
       
         <lastmod>2019-10-01T00:00:00+01:00</lastmod>
       
@@ -20,7 +20,7 @@
     </url>
   
     <url>
-      <loc>/blog/The-Marlow-Project/</loc>
+      <loc>https://lmbarrett-author.com/blog/The-Marlow-Project/</loc>
       
         <lastmod>2019-06-01T00:00:00+01:00</lastmod>
       
@@ -29,7 +29,7 @@
     </url>
   
     <url>
-      <loc>/blog/a-reflection-of-sophie-beaumont/</loc>
+      <loc>https://lmbarrett-author.com/blog/a-reflection-of-sophie-beaumont/</loc>
       
         <lastmod>2017-11-01T00:00:00+00:00</lastmod>
       
@@ -39,7 +39,7 @@
   
   
     <url>
-      <loc>/about/</loc>
+      <loc>https://lmbarrett-author.com/about/</loc>
        <lastmod>2017-11-02T00:00:00+00:00</lastmod>
       
        <changefreq>weekly</changefreq>
@@ -49,7 +49,7 @@
      </url>
   
     <url>
-      <loc>/blog/</loc>
+      <loc>https://lmbarrett-author.com/blog/</loc>
        <lastmod>2017-11-02T00:00:00+00:00</lastmod>
       
        <changefreq>weekly</changefreq>
@@ -59,7 +59,7 @@
      </url>
   
     <url>
-      <loc>/elements/</loc>
+      <loc>https://lmbarrett-author.com/elements/</loc>
        <lastmod>2017-11-02T00:00:00+00:00</lastmod>
       
        <changefreq>weekly</changefreq>
@@ -69,7 +69,7 @@
      </url>
   
     <url>
-      <loc>/</loc>
+      <loc>https://lmbarrett-author.com/</loc>
        <lastmod>2017-11-02T00:00:00+00:00</lastmod>
       
        <changefreq>weekly</changefreq>
@@ -79,7 +79,7 @@
      </url>
   
     <url>
-      <loc>/assets/css/main.css</loc>
+      <loc>https://lmbarrett-author.com/assets/css/main.css</loc>
        <lastmod>2017-11-10T00:20:35+00:00</lastmod>
       
        <changefreq>weekly</changefreq>
@@ -89,7 +89,7 @@
      </url>
   
     <url>
-      <loc>/assets/css/noscript.css</loc>
+      <loc>https://lmbarrett-author.com/assets/css/noscript.css</loc>
        <lastmod>2017-11-10T00:20:35+00:00</lastmod>
       
        <changefreq>weekly</changefreq>
@@ -99,7 +99,7 @@
      </url>
   
     <url>
-      <loc>/sitemap.xml</loc>
+      <loc>https://lmbarrett-author.com/sitemap.xml</loc>
        <lastmod>2017-11-10T00:20:35+00:00</lastmod>
       
        <changefreq>weekly</changefreq>
@@ -109,7 +109,7 @@
      </url>
   
     <url>
-      <loc>/thank-you/</loc>
+      <loc>https://lmbarrett-author.com/thank-you/</loc>
        <lastmod>2017-11-10T00:20:35+00:00</lastmod>
       
        <changefreq>weekly</changefreq>
@@ -119,7 +119,7 @@
      </url>
   
     <url>
-      <loc>/feed.xml</loc>
+      <loc>https://lmbarrett-author.com/feed.xml</loc>
        <lastmod>2017-11-10T00:20:35+00:00</lastmod>
       
        <changefreq>weekly</changefreq>
@@ -129,7 +129,7 @@
      </url>
   
     <url>
-      <loc>/feed.xslt.xml</loc>
+      <loc>https://lmbarrett-author.com/feed.xslt.xml</loc>
        <lastmod>2017-11-10T00:20:35+00:00</lastmod>
       
        <changefreq>weekly</changefreq>

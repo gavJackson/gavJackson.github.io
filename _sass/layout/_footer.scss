@@ -18,10 +18,6 @@
 		max-width: _size(wrapper);
 		z-index: 2;
 		
-		color: rgba(255,255,255,0.75);
-   		background-color: rgba(0,0,0,0.5);
-   		padding: 20px;
-
 		> section {
 			@include vendor('flex-basis', '50%');
 			@include vendor('flex-grow', '1');
@@ -200,6 +196,10 @@
 		width: calc(100% - #{_size(padding) * 2});
 		max-width: _size(wrapper);
 		z-index: 2;
+		color: rgba(255,255,255,0.75);
+   		background-color: rgba(0,0,0,0.5);
+   		padding: 20px;
+
 
 		a {
 			color: inherit;

@@ -17,6 +17,10 @@ Jekyll
 -----
 run `bundle install` in the new directory and finally `bundle exec jekyll serve`. You can now access your brand-new Jekyll site on http://127.0.0.1:4000/. Enjoy!
 
+Gotchas
+----
+The backgrounnd image `bg.jpg` must be 1680x2000 or weirdness may ensue.
+
 
 About the micro site in the sophie folder
 ----

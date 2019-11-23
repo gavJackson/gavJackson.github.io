@@ -26,6 +26,13 @@ Follow the twists and turns and follow both sides of the story to learn the real
 
 Perfect for fans of Gone Girl, The Wife Between Us and The Girl Before
 
+### Micro-site
+
+Lorraine's husband is a web developer who couldn't help himself from creating a micro-site for Sophie, you can see it here:
+
+<a href="/sophie/index.html" target="_preview" class="button ">View microsite</a>
+
+
 ### What readers are saying;
 
 > This is a stunning, awesome read and one which I have absolutely no hestitation in recommending...

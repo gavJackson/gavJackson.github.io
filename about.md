@@ -9,7 +9,7 @@ sitemap:
 ---
 ## About Lorraine
 
-<span class="image left"><img src="{{ "/images/lorraine.jpg" | absolute_url }}" alt="" /></span>
+<span class="image left"><img src="{{ "/images/lorraine.png" | absolute_url }}" alt="" /></span>
 
 A Reflection of Sophie Beaumont is the debut novel by Lorraine Barrett.
 

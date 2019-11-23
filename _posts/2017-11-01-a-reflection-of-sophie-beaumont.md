@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "A Reflection of Sophie Beaumont"
-date:   2017-11-01
+date:   2017-11-23
 excerpt: "A must read for Gone Girl fans. "
 image: "/images/covers/AReflectionOfSophie-Cover-v01.jpg"
 ---

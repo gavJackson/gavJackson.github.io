@@ -7,10 +7,10 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://lmbarrett-author.com" # the base hostname & protocol for your site
 
 # Comments
-disqus_shortname:   "lmbarrett-author"
+disqus_shortname:   lmbarrett-author
 
 # Social
-analytics-id:       "default"
+analytics-id:       "UA-110453957-1"
 twitter:            default
 facebook:           default
 instagram:          lmbarrettauthor

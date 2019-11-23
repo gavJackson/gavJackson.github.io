@@ -13,7 +13,7 @@ sitemap:
 
 A Reflection of Sophie Beaumont is the debut novel by Lorraine Barrett.
 
-She would like to stress that it is a work of fiction and no characters are based on anyone in her real life. Like Sophie, she grew up in Birmingham, lived in Bristol and both have dark hair (and an aversion to work!) but that is where the similarities end....
+She would like to stress that it is a work of fiction and no characters are based on anyone in her real life. Like Sophie, she grew up in Birmingham, lived in Bristol and both have dark hair (and an aversion to work!) but that is where the similarities end.
 <br />
 <br />
 <br />

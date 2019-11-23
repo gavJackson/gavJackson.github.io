@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Mason's Revenge"
-date:   2019-10-01
+date:   2019-11-01
 excerpt: "A Billionaire Boss Romance"
 image: "/images/covers/MasonsRevenge-v01.jpg"
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "You, Me and Other Stuff"
-date:   2019-10-01
+date:   2019-09-01
 excerpt: "A feel-good, light-hearted romantic comedy"
 image: "/images/covers/YouMeAndOtherStufff-Cover-v03.jpg"
 ---

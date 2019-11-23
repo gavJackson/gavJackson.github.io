@@ -2,7 +2,7 @@
 layout: page
 title: Thank you for your correspondence
 ---
-## Thank you for your correspondence
-We are delighted to hear from you. You may expect to receive an answer soon.
+## Thanks for getting in touch
+I am delighted to hear from you and I will answer you very soon. 
 
 Have a nice day!

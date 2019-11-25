@@ -32,6 +32,11 @@ Lorraine's husband is a web developer who couldn't help himself from creating a 
 
 <a href="/sophie/index.html" target="_preview" class="button ">View microsite</a>
 
+### Covers
+
+A Reflection of Sophie Beaumont was released back in November 2017 and since then the cover has gone through a few redesigns:
+
+<img src="{{ "/images/covers/sophie-covers-evolution.jpg" | absolute_url }}" alt="" /></a>
 
 ### What readers are saying;
 

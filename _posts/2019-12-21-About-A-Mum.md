@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "About a mum (coming soon...)"
+title:  "About a mum"
 date:   2019-12-21
-excerpt: "A family comedy"
+excerpt: "A family comedy. Coming soon..."
 image: "/images/covers/AboutAMumCover-v01.jpg"
 ---
 

@@ -19,7 +19,7 @@ She would like to stress that it is a work of fiction and no characters are base
 <br />
 <br />
 <br />
-### Location is Important
+### Location, Location, Location
 <div class="box">
   <p>
     Lorraine lives and writes from Jávea, a small seaside town on the beautiful Costa Blanca in Spain. A Reflection of Sophie Beaumont was written shortly after Lorraine, her husband and two young children moved to Spain after spending ten years living and working in Bristol, having never previously written anything - so perhaps the climate and beautiful surroundings are conducive to the writing process, it certainly helped Lorraine!

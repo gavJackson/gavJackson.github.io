@@ -14,7 +14,7 @@ Golddigger?
 
 or Victim?
 
-You decide...
+You decide....
 
 An easy reading, guilty pleasure book with a dark side and a twist ending. Find out the truth behind Sophie's lies. 
 

@@ -17,7 +17,7 @@ Follow Louisa’s emotional rollercoaster of a life as she contends with disgrun
 
 ### What readers are saying;
 
-> A hilarious page turner, fans of Four Weddings and a Funderal or Love Actually would enjoy this story spanning thirty years from young mum to grown up children. Louise is a great central character in this heart warming rom com novel.
+> A hilarious page turner, fans of Four Weddings and a Funeral or Love Actually would enjoy this story spanning thirty years from young mum to grown up children. Louise is a great central character in this heart warming rom com novel. Lots of Dad jokes too! 
 
 <a href="https://leer.amazon.es/kp/embed?asin=B084HMF5LW&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_1xouEb1X33XD8" target="_preview" class="button ">Read a preview</a>
 <a href="https://www.amazon.co.uk/dp/B084HMF5LW/ref=cm_sw_em_r_mt_dp_U_8rouEbX0BBT8Z" target="_amazon" class="button special ">Buy from Amazon</a>

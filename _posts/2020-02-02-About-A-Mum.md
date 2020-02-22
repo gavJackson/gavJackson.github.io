@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "About a mum"
-date:   2019-12-21
+date:   2020-02-02
 excerpt: "A family comedy, funny page turner."
 image: "/images/covers/AboutAMumCover.jpg"
 ---

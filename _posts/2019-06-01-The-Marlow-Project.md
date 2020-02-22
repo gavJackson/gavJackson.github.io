@@ -2,7 +2,7 @@
 layout: post
 title:  "The Marlow Project"
 date:   2019-05-23
-excerpt: "A gripping, twisty medical thriller"
+excerpt: "A gripping, twisty medical thriller."
 image: "/images/covers/Marlow-Cover-v03.jpg"
 ---
 

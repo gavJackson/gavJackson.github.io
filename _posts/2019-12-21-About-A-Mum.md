@@ -2,7 +2,7 @@
 layout: post
 title:  "About a mum"
 date:   2019-12-21
-excerpt: "A family comedy. Coming soon..."
+excerpt: "A family comedy, funny page turner."
 image: "/images/covers/AboutAMumCover.jpg"
 ---
 ## About

@@ -19,6 +19,8 @@ Follow Louisa’s emotional rollercoaster of a life as she contends with disgrun
 
 > A hilarious page turner, fans of Four Weddings and a Funeral or Love Actually would enjoy this story spanning thirty years from young mum to grown up children. Louise is a great central character in this heart warming rom com novel. Lots of Dad jokes too! 
 
+> What a fun read! Oh, how I sympathised with the kids! With chapters from different characters, we catch up on the then and now - and it's extremely entertaining! With a great story and fabulous dramatisation, I just loved everything about this book and, may I say, Gregory deserves the status of Saint! I cringed, I giggled, I almost cried (with laughter) and it really brightened my day. A fantastic, fun novel,  and one I'm happy to recommend to all those who enjoy the lighter side of life. 4.5* stars, and worth every one of them!
+
 <a href="https://leer.amazon.es/kp/embed?asin=B084HMF5LW&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_1xouEb1X33XD8" target="_preview" class="button ">Read a preview</a>
 <a href="https://www.amazon.co.uk/dp/B084HMF5LW/ref=cm_sw_em_r_mt_dp_U_8rouEbX0BBT8Z" target="_amazon" class="button special ">Buy from Amazon</a>
 

@@ -20,7 +20,7 @@ Read now in this fun, sweet, romantic comedy.
 
 ### What readers are saying;
 
-> A charming page turner of a love story with plenty of laughs, `Will they? Won't they?`, definately a guitly pleasure holiday read.
+> A charming page turner of a love story with plenty of laughs, definately a guilty pleasure holiday read. Five stars!
 
 <a href="https://leer.amazon.es/kp/embed?asin=B08FNL4XPG&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_8v5mFb16HSQ7F" target="_preview" class="button ">Read a preview</a>
 <a href="https://www.amazon.co.uk/dp/B08FNL4XPG/ref=cm_sw_em_r_mt_dp_Cu5mFbYDAWP0Q" target="_amazon" class="button special ">Buy from Amazon</a>

@@ -19,7 +19,7 @@ run `bundle install` in the new directory and finally `bundle exec jekyll serve`
 
 Gotchas
 ----
-The backgrounnd image `bg.jpg` must be 1680x2000 or weirdness may ensue.
+The background image `bg.jpg` must be 1680x2000 or weirdness may ensue.
 
 
 About the micro site in the sophie folder

@@ -1,5 +1,6 @@
 ---
 layout: post
+author: "LM Barrett"
 title:  "A Reflection of Sophie Beaumont"
 date:   2017-11-23
 excerpt: "A must read for Gone Girl fans. "

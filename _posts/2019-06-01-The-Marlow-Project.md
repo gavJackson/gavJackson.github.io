@@ -1,5 +1,6 @@
 ---
 layout: post
+author: "LM Barrett"
 title:  "The Marlow Project"
 date:   2019-05-23
 excerpt: "A gripping, twisty medical thriller."

@@ -1,5 +1,6 @@
 ---
 layout: post
+author: "LM Barrett"
 title:  "This Charmless Man"
 date:   2020-08-11
 excerpt: "A funny, feel-good romantic comedy."

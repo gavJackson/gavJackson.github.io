@@ -31,6 +31,26 @@
 				width: 100vw;
 				height: 100vh;
 			}
+
+            &.book{
+              z-index: 0;
+              background-size: cover;
+              //-webkit-filter: blur(5px) brightness(50%);
+              //filter: blur(5px) brightness(50%);
+              background-repeat: no-repeat;
+              background-position: center center;
+
+              &:after{
+                content: ',';
+                font-size: 0;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                background-color: rgba(0,0,0,0.35);
+              }
+            }
 		}
 
 		&.fade-in {

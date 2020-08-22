@@ -1,5 +1,6 @@
 ---
 layout: post
+author: "LM Barrett"
 title:  "About a mum"
 date:   2020-02-02
 excerpt: "A family comedy, funny page turner."

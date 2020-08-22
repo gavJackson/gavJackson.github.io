@@ -33,12 +33,14 @@
 
           <article class="post featured">
             <header class="major">
-              <h2><a href="#">Lorraine's Books</a></h2>
+              <h2><a href="#">Romance Books</a></h2>
+
+	            <p>Lorraine also writes under the pen name of <strong>Lorena Jackson</strong> to separate her Romance writing from her other novels.</p>
 
           </article>
 					<!-- Post -->
 					<section class="posts">
-						{% assign sorted-posts = site.posts | where: "author","LM Barrett" %}
+						{% assign sorted-posts = site.posts | where: "author","Lorena Jackson" %}
 						{% for post in sorted-posts limit: 10 %}
 						{% assign mod3 = forloop.index | modulo: 3 %}
 							<article>

@@ -15,7 +15,8 @@ http://www.lmbarrett-author.com/
 
 Jekyll
 -----
-run `bundle install` in the new directory and finally `bundle exec jekyll serve`. You can now access your brand-new Jekyll site on http://127.0.0.1:4000/. Enjoy!
+
+run `sudo bundle install` in the new directory and finally `bundle exec jekyll serve`. You can now access your brand-new Jekyll site on http://127.0.0.1:4000/. Enjoy!
 
 Gotchas
 ----

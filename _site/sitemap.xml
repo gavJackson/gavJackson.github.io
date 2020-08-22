@@ -2,36 +2,63 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
     <url>
-      <loc>https://lmbarrett-author.com/blog/Masons-Revenge/</loc>
+      <loc>http://localhost:4000/blog/This-Charmless-Man/</loc>
       
-        <lastmod>2019-10-01T00:00:00+01:00</lastmod>
-      
-      <changefreq>weekly</changefreq>
-      <priority>0.7</priority>
-    </url>
-  
-    <url>
-      <loc>https://lmbarrett-author.com/blog/You-Me-And-Other-Stuff/</loc>
-      
-        <lastmod>2019-10-01T00:00:00+01:00</lastmod>
+        <lastmod>2020-08-11T00:00:00+01:00</lastmod>
       
       <changefreq>weekly</changefreq>
       <priority>0.7</priority>
     </url>
   
     <url>
-      <loc>https://lmbarrett-author.com/blog/The-Marlow-Project/</loc>
+      <loc>http://localhost:4000/blog/About-A-Mum/</loc>
       
-        <lastmod>2019-06-01T00:00:00+01:00</lastmod>
+        <lastmod>2020-02-02T00:00:00+00:00</lastmod>
       
       <changefreq>weekly</changefreq>
       <priority>0.7</priority>
     </url>
   
     <url>
-      <loc>https://lmbarrett-author.com/blog/a-reflection-of-sophie-beaumont/</loc>
+      <loc>http://localhost:4000/blog/Dexters-Surprise/</loc>
       
-        <lastmod>2017-11-01T00:00:00+00:00</lastmod>
+        <lastmod>2019-12-01T00:00:00+00:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>0.7</priority>
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/blog/Masons-Revenge/</loc>
+      
+        <lastmod>2019-11-10T00:00:00+00:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>0.7</priority>
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/blog/You-Me-And-Other-Stuff/</loc>
+      
+        <lastmod>2019-09-28T00:00:00+01:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>0.7</priority>
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/blog/The-Marlow-Project/</loc>
+      
+        <lastmod>2019-05-23T00:00:00+01:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>0.7</priority>
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/blog/a-reflection-of-sophie-beaumont/</loc>
+      
+        <lastmod>2017-11-23T00:00:00+00:00</lastmod>
       
       <changefreq>weekly</changefreq>
       <priority>0.7</priority>
@@ -39,7 +66,7 @@
   
   
     <url>
-      <loc>https://lmbarrett-author.com/about/</loc>
+      <loc>http://localhost:4000/about/</loc>
        <lastmod>2017-11-02T00:00:00+00:00</lastmod>
       
        <changefreq>weekly</changefreq>
@@ -49,7 +76,7 @@
      </url>
   
     <url>
-      <loc>https://lmbarrett-author.com/blog/</loc>
+      <loc>http://localhost:4000/blog/</loc>
        <lastmod>2017-11-02T00:00:00+00:00</lastmod>
       
        <changefreq>weekly</changefreq>
@@ -59,7 +86,7 @@
      </url>
   
     <url>
-      <loc>https://lmbarrett-author.com/elements/</loc>
+      <loc>http://localhost:4000/elements/</loc>
        <lastmod>2017-11-02T00:00:00+00:00</lastmod>
       
        <changefreq>weekly</changefreq>
@@ -69,7 +96,7 @@
      </url>
   
     <url>
-      <loc>https://lmbarrett-author.com/</loc>
+      <loc>http://localhost:4000/</loc>
        <lastmod>2017-11-02T00:00:00+00:00</lastmod>
       
        <changefreq>weekly</changefreq>
@@ -79,7 +106,7 @@
      </url>
   
     <url>
-      <loc>https://lmbarrett-author.com/assets/css/main.css</loc>
+      <loc>http://localhost:4000/assets/css/main.css</loc>
        <lastmod>2017-11-10T00:20:35+00:00</lastmod>
       
        <changefreq>weekly</changefreq>
@@ -89,7 +116,7 @@
      </url>
   
     <url>
-      <loc>https://lmbarrett-author.com/assets/css/noscript.css</loc>
+      <loc>http://localhost:4000/assets/css/noscript.css</loc>
        <lastmod>2017-11-10T00:20:35+00:00</lastmod>
       
        <changefreq>weekly</changefreq>
@@ -99,7 +126,17 @@
      </url>
   
     <url>
-      <loc>https://lmbarrett-author.com/sitemap.xml</loc>
+      <loc>http://localhost:4000/romance/</loc>
+       <lastmod>2017-11-02T00:00:00+00:00</lastmod>
+      
+       <changefreq>weekly</changefreq>
+      
+       <priority>1.0</priority>
+      
+     </url>
+  
+    <url>
+      <loc>http://localhost:4000/sitemap.xml</loc>
        <lastmod>2017-11-10T00:20:35+00:00</lastmod>
       
        <changefreq>weekly</changefreq>
@@ -109,7 +146,7 @@
      </url>
   
     <url>
-      <loc>https://lmbarrett-author.com/thank-you/</loc>
+      <loc>http://localhost:4000/thank-you/</loc>
        <lastmod>2017-11-10T00:20:35+00:00</lastmod>
       
        <changefreq>weekly</changefreq>
@@ -119,7 +156,7 @@
      </url>
   
     <url>
-      <loc>https://lmbarrett-author.com/feed.xml</loc>
+      <loc>http://localhost:4000/robots.txt</loc>
        <lastmod>2017-11-10T00:20:35+00:00</lastmod>
       
        <changefreq>weekly</changefreq>
@@ -129,7 +166,7 @@
      </url>
   
     <url>
-      <loc>https://lmbarrett-author.com/feed.xslt.xml</loc>
+      <loc>http://localhost:4000/feed.xml</loc>
        <lastmod>2017-11-10T00:20:35+00:00</lastmod>
       
        <changefreq>weekly</changefreq>

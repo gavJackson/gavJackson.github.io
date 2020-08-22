@@ -21,7 +21,6 @@ When sex and emotions get involved and secrets are uncovered, will true love fin
 Read now to find out in this new standalone romance.
 
 <a href="https://read.amazon.co.uk/kp/embed?asin=B07ZPF4PHL&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_dQqqFb8WVQ66W" target="_preview" class="button ">Read a preview</a>
-
 <a href="https://www.amazon.co.uk/dp/B07ZPF4PHL/ref=cm_sw_em_r_mt_dp_dQqqFb8WVQ66W" target="_amazon" class="button special ">Buy from Amazon</a>
 
 

@@ -21,7 +21,6 @@ Read now in this fun, standalone romance as Dexter finally finds out there’s m
 Part of The British Billionaire Series.
 
 <a href="https://read.amazon.co.uk/kp/embed?asin=B0827Z4L37&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_RTqqFb74TR13V" target="_preview" class="button ">Read a preview</a>
-
 <a href="https://www.amazon.co.uk/dp/B0827Z4L37/ref=cm_sw_em_r_mt_dp_RTqqFb74TR13V" target="_amazon" class="button special ">Buy from Amazon</a>
 
 

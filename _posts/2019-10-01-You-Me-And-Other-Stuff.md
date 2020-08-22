@@ -16,6 +16,11 @@ This is the story between two childhood friends and the 'stuff' that always gets
 
 Find out what Sarah did to cause Declan's current situation and if Declan will ever forgive her. Can things ever go back to the way they were?
 
+### Covers
+You, Me and Other Stuff was released back in September 2019 and the cover has been redesigned once:
+
+<img src="{{ "/images/covers/you-me-covers-evolution.jpg" | absolute_url }}" class="main image" />
+
 ### What readers are saying;
 
 > A fabulous read! I've smiled, I've laughed, I've empathised, I've found myself rather emotional and I've loved every single sentence...

@@ -3,7 +3,7 @@ layout: post
 title:  "You, Me and Other Stuff"
 date:   2019-09-28
 excerpt: "A feel-good, light-hearted romantic comedy."
-image: "/images/covers/YouMeAndOtherStufff-Cover-v04.jpg"
+image: "/images/covers/YouMeAndOtherStuff-Cover-v04.jpg"
 ---
 
 ## About

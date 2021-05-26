@@ -28,12 +28,15 @@ Read now in this light-hearted, romantic comedy.
 ### What readers are saying;
 
 > I've really enjoyed this one - a light-hearted, fun novel was just what I needed..." 
+
 Grace J Reviewer Lady.
 
 > You must read this if you are looking for one entertaining read! That ending was so cute..." 
+
 C's La Vie Book Reviews.
 
 > I couldn't resist this...I want this to be a movie..." 
+
 Carole's Random Ramblings.
 
 <a href="https://read.amazon.co.uk/kp/embed?asin=B08LTQFRTX&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_11VF1KRG9RWTPZQ5VKGW" target="_preview" class="button ">Read a preview</a>

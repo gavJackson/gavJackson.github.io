@@ -4,7 +4,7 @@ author: "LM Barrett"
 title:  "The Marlow Project"
 date:   2019-05-23
 excerpt: "A gripping, twisty medical thriller."
-image: "/images/covers/Marlow-Cover-v4a.jpg"
+image: "/images/covers/Marlow-Cover-v04a.jpg"
 ---
 
 ## About

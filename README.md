@@ -8,9 +8,9 @@ This is my GitHub Pages website, you can get to it at
 
 [gavJackson.github.io](http://gavJackson.github.io)
 
-This repository contains the code for LM Barrett's website.
+This repository contains the code for LM Barrett's website, which no longer exists on http://www.lmbarrett-author.com/
 
-http://www.lmbarrett-author.com/
+I plan to move this code into a sub folder and use this site for http://www.digital-mojo.com/
 
 
 Jekyll

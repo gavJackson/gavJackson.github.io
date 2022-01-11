@@ -4,7 +4,7 @@ bio:                'Lorraine lives and writes from Jávea, a small seaside town
 description:        "Lorraine lives and writes from Jávea, a small seaside town on the beautiful Costa Blanca in Spain."
 locale:             en_US
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://lmbarrett-author.com" # the base hostname & protocol for your site
+url: "http://www.digital-mojo.com" # the base hostname & protocol for your site
 
 # Comments
 disqus_shortname:   lmbarrett-author

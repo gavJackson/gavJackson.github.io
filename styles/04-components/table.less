@@ -2,10 +2,13 @@ table{
 	width: 100%;
 
 	border: 1px solid @borderColor;
+	.gradient(@borderColor, darken(@borderColor, 15%), darken(@borderColor, 10%));
 
 	th, td{
 		padding: 5px 10px;
 		text-align: left;
+		font-weight: 300;
+		font-size: 16px;
 
 		&.right-aligned{
 			text-align: right;
@@ -14,9 +17,7 @@ table{
 
 	thead{
 		th{
-			font-weight: 100;
-			font-size: 20px;
-
+			color: white;
 			border-bottom: 1px solid @borderColor;
 		}
 	}
@@ -24,7 +25,7 @@ table{
 	tbody{
 		tr{
 			&:nth-child(odd){
-				background-color: fade(@borderColor, 40%);
+				background-color: fade(black, 20%);
 			}
 		}
 

@@ -15,51 +15,48 @@ if ('serviceWorker' in navigator) {
 
 ///////////////////////////////////////////////////////////
 //
-// Utility functions
+// Utility functions / UI Handlers
 //
 ///////////////////////////////////////////////////////////
 
-function toggleFlag(payload){
-	if(payload.type === 'add'){
-		document.querySelector('html').classList.add(payload.flag);
+window.mojo = {
+	toggleFlag: (payload) =>{
+		if(payload.type === 'add'){
+			document.querySelector('html').classList.add(payload.flag);
+		}
+		else{
+			document.querySelector('html').classList.remove(payload.flag);
+		}
+	},
+
+	showImage: (newHash) =>{
+		window.mojo.toggleFlag({type: 'add', flag: 'showing-scroller'});
+
+		window.setTimeout(() => {
+			window.location.hash = newHash;
+		}, 1);
+	},
+
+	showMenu: () => {
+		document.querySelector('html').classList.add('showing-menu');
+	},
+
+	hideMenu: () => {
+		document.querySelector('html').classList.remove('showing-menu');
+	},
+
+	showHomeText: (message) => {
+		document.getElementById('scrollText').style.display = 'none';
+		document.getElementById('homeText').innerText = message;
+		document.getElementById('homeText').style.display = 'block';
+	},
+
+	hideHomeText: () => {
+		document.getElementById('scrollText').style.display = 'block';
+		document.getElementById('homeText').style.display = 'none';
 	}
-	else{
-		document.querySelector('html').classList.remove(payload.flag);
-	}
-}
+};
 
-///////////////////////////////////////////////////////////
-//
-// UI handlers
-//
-///////////////////////////////////////////////////////////
-
-function showImage(newHash){
-	toggleFlag({type: 'add', flag: 'showing-scroller'});
-
-	window.setTimeout(() => {
-		window.location.hash = newHash;
-	}, 1);
-}
-
-function showMenu(){
-	document.querySelector('html').classList.add('showing-menu');
-}
-
-function hideMenu(){
-	document.querySelector('html').classList.remove('showing-menu');
-}
-
-function showHomeText(message){
-	document.getElementById('scrollText').style.display = 'none';
-	document.getElementById('homeText').innerText = message;
-	document.getElementById('homeText').style.display = 'block';
-}
-
-function hideHomeText(){
-	document.getElementById('scrollText').style.display = 'block';
-	document.getElementById('homeText').style.display = 'none';
-}
 ///////////////////////////////////////////////////////////
 //
 // animation via intersection observers
@@ -88,9 +85,9 @@ window.onload = () => {
 			// Add 'active' class if observation target is inside viewport
 			if (entry.isIntersecting) {
 				const delay = entry.target.getAttribute('data-delay') || 1;
-				window.setTimeout((entry) => {
-					entry.target.style.animationName = entry.target.getAttribute('data-animation');
-					entry.target.style.visibility = 'visible';
+				window.setTimeout((el) => {
+					el.target.style.animationName = el.target.getAttribute('data-animation');
+					el.target.style.visibility = 'visible';
 				}, delay, entry);
 			}
 		});
@@ -107,13 +104,19 @@ window.onload = () => {
 	// now load the hero video
 	///////////////////////////////
 
-	const video = document.getElementById('heroVideo');
-	const source = document.createElement('source');
+	window.setTimeout(() => {
+		const video = document.getElementById('heroVideo');
 
-	source.setAttribute('src', '/video/world.mp4');
-	source.setAttribute('type', 'video/mp4');
+		const sourceMP4 = document.createElement('source');
+		sourceMP4.setAttribute('src', '/video/world.mp4');
+		sourceMP4.setAttribute('type', 'video/mp4');
 
-	video.appendChild(source);
-	video.play();
+		const sourceWebM = document.createElement('source');
+		sourceWebM.setAttribute('src', '/video/world.webm');
+		sourceWebM.setAttribute('type', 'video/webm');
 
+		video.appendChild(sourceMP4);
+		video.appendChild(sourceWebM);
+		video.play();
+	}, 100);
 }

@@ -1,0 +1,115 @@
+///////////////////////////////////////////////////////////
+//
+// layout
+//
+///////////////////////////////////////////////////////////
+
+html, body{
+	//.gradient(@backgroundGradientFrom,  @backgroundGradientTo, @backgroundGradientFrom);
+
+	background-color: @outerBGColor;
+	background-attachment: fixed;
+	margin: 0;
+	padding: 0;
+}
+
+main{
+	.rounded(30px);
+	.box-shadow(0px 0px 40px 40px fade(white, 5%));
+
+	@media (max-width: @widthDesktop + 200px) {
+		margin-top: 25px;
+	}
+	@media (max-width: @widthDesktop) {
+		.rounded(0);
+		.box-shadow(none);
+
+		margin-top: 0;
+	}
+
+	//border: 15px solid darken(@outerBGColor, 10%);
+
+	min-width: 350px;
+	position: relative;
+	max-width: @widthDesktop;
+	margin: 0 auto;
+	background-color: black;
+	margin-top: 70px;
+	padding: 0;
+	//background-image: url("/assets/video/world-still.jpg");
+	//background-image: url("/assets/images/light.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	//overflow: hidden;
+}
+
+///////////////////////////////////////////////////////////
+//
+// banner (photo)
+//
+///////////////////////////////////////////////////////////
+
+.image-banner{
+	.box-sizing;
+
+	background-image: url("/assets/images/bath.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 250px;
+
+	text-align: center;
+	padding-left: 50px;
+	padding-right: 50px;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+
+	@media (max-width: @threshold3) {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.content{
+		max-width: 800px;
+	}
+
+	h2{
+		margin-top: 0;
+		font-weight: 300;
+		line-height: 35px;
+		font-style: italic;
+		text-align: center;
+
+		@media (max-width: @threshold3) {
+			font-size: 30px;
+		}
+
+		@media (max-width: @threshold4) {
+			font-size: 20px;
+		}
+	}
+
+	.title,
+	.name{
+		.rounded(5px);
+
+		background-color: @accentColor;
+		display: inline-block;
+		padding: 10px 20px;
+	}
+
+	.title{
+		margin-top: -30px;
+
+		@media (max-width: @threshold4) {
+			font-size: 13px;
+		}
+	}
+
+	.name{
+		font-size: 20px;
+		font-weight: 300;
+	}
+}

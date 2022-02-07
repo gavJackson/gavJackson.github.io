@@ -1,0 +1,28 @@
+.hero-container{
+	width: 100%;
+	padding-top: 56.5%;
+	height: 0px;
+	position: absolute;
+
+	video,
+	.hero-overlay{
+		.border-radius(30px, 0, 0, 30px);
+
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		border-bottom: 3px solid black;
+
+		@media (max-width: @widthDesktop) {
+			.rounded(0);
+		}
+	}
+
+	.hero-overlay{
+		background-image: url("/assets/hero/hero-overlay.png");
+		background-size: contain;
+	}
+}

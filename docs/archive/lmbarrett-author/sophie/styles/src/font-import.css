@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "HeaderFont";
+  src: url("../assets/fonts/senticosansdt-regular-webfont.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BodyFont";
+  src: url("../assets/fonts/senticosansdt-light-webfont.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AegonIcons";
+  src: url("../assets/icons/fonts/AegonIcons.svg?#AegonIcons") format('svg'), url("../assets/icons/fonts/AegonIcons.woff") format('woff'), url("../assets/icons/fonts/AegonIcons.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

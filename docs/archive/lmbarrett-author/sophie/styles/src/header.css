@@ -1,0 +1,20 @@
+.site-header {
+  height: 400px;
+  background-color: red;
+  position: relative;
+}
+.mobile-navigation {
+  background-color: darkgray;
+  padding: 20px;
+  position: fixed;
+  display: block;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  width: 100%;
+}
+.tag-line {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}

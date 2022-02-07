@@ -1,0 +1,50 @@
+section{
+
+	///////////////////////////////////////////////////////////
+	//
+	// what
+	//
+	///////////////////////////////////////////////////////////
+
+	&.what{
+
+		//background-image: url("/assets/icons/circle.jpg");
+		//background-repeat: no-repeat;
+		//background-position: bottom right;
+		//
+		//.has-2-columns {
+		//	grid-template-columns: fit-content(400px) 1fr;
+		//
+		//	@media (max-width: @threshold3) {
+		//		display: block;
+		//	}
+		//}
+
+		.img.code{
+			background-image: url("/assets/images/lighthouse.jpg");
+			float: right;
+			//margin: 50px;
+			margin-top: 0;
+			margin-left: 0;
+			width: 500px;
+			background-repeat: no-repeat;
+			background-position: top right;
+			height: 400px;
+			background-size: contain;
+			margin-top: 50px;
+
+			@media (max-width: @threshold1) {
+				width: 300px;
+			}
+
+			@media (max-width: @threshold2) {
+				width: 200px;
+			}
+
+			@media (max-width: @threshold3) {
+				display: none;
+			}
+		}
+	}
+
+}

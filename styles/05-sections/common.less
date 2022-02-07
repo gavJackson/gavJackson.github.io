@@ -1,0 +1,71 @@
+
+
+//html{
+//	scroll-snap-type: y mandatory;
+//	scroll-padding: -10px;
+//}
+
+hr{
+	border-top: 1px solid mix(white, black, 30%);
+	padding-top: 10px;
+	margin-top: 30px;
+}
+
+
+section, footer{
+	//scroll-snap-align: start;
+	min-width: 350px;
+	min-height: 400px;
+	padding: 80px 100px;
+	padding-top: 80px !important;   // this is for the menu
+
+	@media (max-width: @threshold1) {
+		padding: 40px 50px;
+	}
+
+	@media (max-width: @threshold2) {
+		padding: 20px 25px;
+	}
+
+	&.white {
+		background-color: white;
+		color: lighten(black, 10%);
+
+		hr {
+			border-top: 1px solid mix(black, white, 30%);
+			padding-top: 10px;
+			margin-top: 30px;
+		}
+
+		a:not(.button) {
+			color: @accentColor;
+		}
+
+		.img.logo-icon {
+			background-image: url("/assets/logos/logo-icon-black.png");
+		}
+	}
+
+	&.blue{
+		.gradient(@accentColor, darken(@accentColor, 20%), @accentColor);
+	}
+
+	///////////////////////////////////////////////////////////
+	//
+	// images
+	//
+	///////////////////////////////////////////////////////////
+
+	.img.logo-icon{
+		background-image: url("/assets/logos/logo-icon-white.png");
+		float: right;
+		margin-top: 0;
+		margin-left: 20px;
+		margin-bottom: 20px;
+		width: 100px;
+		height: 100px;
+		background-repeat: no-repeat;
+		background-position: top right;
+		background-size: contain;
+	}
+}

@@ -1,0 +1,155 @@
+html,body{
+	height: 100%;
+	min-height: 100%;
+	background-color: #272727;
+}
+
+body{
+	color: white;
+	padding: 0px;
+	margin: 0px;
+
+	font-family: @bodyFont;
+	font-size: 18px;
+}
+
+///////////////////////////////////////////////////////////
+//
+// grid layout
+//
+///////////////////////////////////////////////////////////
+
+.side-bar, .desktop{
+	display: none;
+}
+
+@media (min-width: @desktopWidth) {
+
+	@supports (display: grid) {
+		body{
+			overflow-x: hidden;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center right;
+			background-attachment: fixed;
+			background-image: url('../assets/images/background-loading.jpg');
+
+			&.loaded{
+				background-image: url('../assets/images/background-large.jpg');
+			}
+		}
+
+		.desktop{
+			display: block;
+		}
+
+
+			.main-container {
+				display: grid;
+				grid-template-columns: 150px minmax(200px, 1fr) 100px minmax(200px, 1fr);
+
+				background-color: transparent !important;
+				max-width: 100% !important;
+				padding-left: 0px !important;
+				overflow: scroll;
+
+
+				///////////////////////////////
+				// first column
+				///////////////////////////////
+
+
+				.navigation {
+					top: 0px;
+					padding-top: 0px;
+					position: relative;
+
+					grid-column-start: 1;
+					grid-row-start: 1;
+					width: auto;
+					margin-left: 0px;
+
+					.nav-list{
+						position: sticky;
+						top: 0px;
+						left: 0px;
+						width: 150px;
+					}
+				}
+
+				///////////////////////////////
+				// second column
+				///////////////////////////////
+
+				.page-content {
+					grid-column-start: 2;
+					grid-row-start: 1;
+
+					background-color: black;
+					background-image: none;
+					border: none;
+					position: relative;
+				}
+
+
+					.side-bar{
+						display: block;
+
+						.inner{
+							position: fixed;
+							background-image: url('../assets/images/sidebar.png');
+							background-size: cover;
+							background-repeat: no-repeat;
+							background-position: top right;
+							background-size: 100% 100%;
+							margin-left: -1px;
+							pointer-events: none;
+							z-index: 1;
+							width: 110px;
+							height: 100%;
+						}
+
+						grid-column-start: 3;
+						grid-row-start: 1;
+					}
+
+				///////////////////////////////
+				// third column
+				///////////////////////////////
+
+				.author{
+					position: fixed;
+					right: 0px;
+					top: 0px;
+					font-size: 0px;
+					display: block;
+					width: 479px;
+					height: 233px;
+
+					background-image: url('../assets/images/author-yellow.png');
+				}
+
+				.tag-line{
+					position: fixed;
+				}
+
+				.site-header {
+					background: none;
+					background-color: transparent;
+					position: relative;
+					padding-top: 0px;
+					grid-column-start: 4;
+					grid-row-start: 1;
+					height: 100%;
+
+					.mobile-navigation {
+						display: none;
+					}
+
+					.tag-line{
+						display: none;
+					}
+				}
+			}
+	}
+}

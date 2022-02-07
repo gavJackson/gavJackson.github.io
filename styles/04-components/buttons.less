@@ -1,0 +1,98 @@
+
+///////////////////////////////////////////////////////////
+//
+// buttons
+//
+///////////////////////////////////////////////////////////
+
+.button{
+	display: inline-block;
+	border-radius: 65px;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 700;
+	text-align: center;
+	text-decoration: none;
+	padding: 20px 60px;
+	color: fade(white, 80%);
+	border: 2px solid fade(white, 40%);
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 160px;
+	padding-left: 0;
+	padding-right: 0;
+	background-color: fade(black, 60%);
+
+	&.hero{
+		border: none;
+		background-color: @accentColor;
+		color: black;
+
+		&:hover{
+			background-color: @altColor;
+		}
+
+		&.green{
+			background-color: @altColor;
+
+			&:hover{
+				background-color: @accentColor;
+			}
+		}
+	}
+
+	&:hover{
+		color: white;
+		text-decoration: none;
+		border-color: white;
+	}
+}
+
+.after-button{
+	margin-left: 20px;
+	font-weight: 300;
+	font-size: 20px;
+	font-style: italic;
+}
+
+.white{
+	.button{
+		&.hero{
+			color: white;
+			background-color: black;
+
+			&:hover{
+				background-color: @altColor;
+			}
+		}
+	}
+}
+
+///////////////////////////////////////////////////////////
+//
+// links
+//
+///////////////////////////////////////////////////////////
+
+
+a{
+	color: @altColor;
+	text-decoration: underline;
+
+	&:hover{
+		text-decoration: none;
+	}
+
+	&:active{
+		color: @altColor;
+	}
+
+	&.close{
+		text-decoration: none;
+		color: @accentColor;
+
+		&:hover{
+			color: @altColor;
+		}
+	}
+}

@@ -1,0 +1,145 @@
+
+///////////////////////////////
+// mobile menu
+///////////////////////////////
+
+html.showing-menu{
+	overflow: hidden;
+
+	.mobile-menu{
+		.transition(all, 0.35s, cubic-bezier(0.16, 1, 0.3, 1));
+		.scale(1);
+
+		opacity: 1;
+		pointer-events: visible;
+		top: 70px;
+	}
+
+	&.scrolled-past-home{
+		.mobile-menu{
+			top: 0;
+		}
+	}
+}
+
+.mobile-menu{
+	.gradient(@altColor, darken(@altColor, 35%), darken(@altColor, 15%));
+	.scale(0.5);
+	.transform-origin(50% 100%);
+
+	min-width: 350px;
+	opacity: 0;
+	background-color: @accentColor;
+	position: fixed;
+	max-width: 1200px;
+	margin: 0 auto;
+	right: 0;
+	left: 0;
+	top: 20%;
+	bottom: 0;
+	z-index: 3;
+	pointer-events: none;
+	overflow: auto;
+
+	.img.logo{
+		background-image: url("/assets/logos/logo-small.png");
+		background-size: contain;
+		background-position: center center;
+		width: 300px;
+		height: 60px;
+		background-repeat: no-repeat;
+	}
+
+	ul{
+		list-style: none;
+		margin-left: 50px;
+		margin-right: 150px;
+		margin-top: 50px;
+		padding-left: 50px;
+
+		@media (max-width: @threshold3) {
+			margin: 20px;
+			padding: 10px;
+		}
+
+		li{
+			font-size: 35px;
+			line-height: 55px;
+			font-weight: 100;
+
+			a{
+				.transition(all, 0.3s, ease-in-out);
+
+				color: white;
+				text-decoration: none;
+				line-height: 65px;
+
+				&:hover{
+					color: @altColor;
+				}
+			}
+
+			a.menu-link{
+				&:hover{
+					padding-left: 50px;
+					font-size: 50px;
+				}
+			}
+
+			.logo{
+				width: 200px;
+				float: right;
+			}
+
+			.close{
+				font-size: 20px;
+				float: left;
+				cursor: pointer;
+			}
+
+			strong{
+				display: block;
+				margin-top: 50px;
+				font-size: 18px;
+				color: fade(white, 60%);
+				margin-bottom: -10px;
+
+				@media (max-width: @threshold3) {
+					margin-top: 10px;
+				}
+			}
+
+		}
+		&.contact{
+			margin-top: 100px;
+
+			@media (max-width: @threshold3) {
+				margin-top: 50px;
+			}
+
+			li {
+				border-top: 1px solid fade(white, 50%);
+				font-size: 23px;
+				float: right;
+				padding-left: 50px;
+
+				&:last-child {
+					padding-left: 0;
+				}
+
+				@media (max-width: @threshold3) {
+					font-size: 18px;
+					border: none;
+					display: block;
+					float: none;
+					text-align: right;
+					line-height: 33px;
+
+					a{
+						line-height: 33px;
+					}
+				}
+			}
+		}
+	}
+}

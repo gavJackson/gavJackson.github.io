@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<title>Digital Mojo: Web Design Agency</title>
+		<link rel="icon" href="data:,">
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes" />
+		<meta name="description" content="Digital Mojo is a new Website Design Agency based out of Bath (UK). " />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+
+		<!-- ///////////////////////////////
+		GA
+		/////////////////////////////// -->
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+<!--		<script async src="https://www.googletagmanager.com/gtag/js?id=G-163WGF8N4S"></script>-->
+<!--		<script>-->
+<!--			window.dataLayer = window.dataLayer || [];-->
+<!--			function gtag(){dataLayer.push(arguments);}-->
+<!--			gtag('js', new Date());-->
+
+<!--			gtag('config', 'G-163WGF8N4S');-->
+<!--		</script>-->
+
+		<!-- ///////////////////////////////
+		PWA
+		/////////////////////////////// -->
+
+		<link rel="manifest" href="https://www.digital-mojo.com/manifest.json" />
+		<meta name="theme-color" content="#000000" />
+		<link rel="apple-touch-icon" href="logo192.png" />
+
+		<!-- ///////////////////////////////
+		Loader styles (must be inline)
+		/////////////////////////////// -->
+
+		<style>
+			html{
+				background-color: black;
+			}
+
+			.loader{
+				background-color: rgba(0,0,0,1);
+				position: fixed;
+				transition: all 1s linear;
+				transition-delay: 1s;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				z-index: 99;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-family: Arial, sans-serif;
+				color: white;
+				font-size: 10px;
+				text-align: center;
+				pointer-events: none;
+				background-repeat: no-repeat;
+				background-position: center center;
+			}
+
+			.loader .img.logo{
+				background-image: url("logo192.png");
+				background-size: contain;
+				width: 75px;
+				height: 75px;
+			}
+
+			.dots-5 {
+				width:5px;
+				height:5px;
+				background: #ffffff;
+				border-radius: 50%;
+				box-shadow: 10px 0 #ffffff22,-10px 0 #ffffff;
+				animation:d5 1s infinite linear alternate;
+				position: absolute;
+				text-align: center;
+				margin-left: 35px;
+			}
+			@keyframes d5 {
+				0% {box-shadow: 10px 0 #ffffff,-10px 0 #ffffff22;background: #ffffff}
+				33%{box-shadow: 10px 0 #ffffff,-10px 0 #ffffff22;background: #ffffff22}
+				66%{box-shadow: 10px 0 #ffffff22,-10px 0 #ffffff;background: #ffffff22}
+			}
+
+
+			html.loaded .loader{
+				opacity: 0;
+			}
+		</style>
+
+
+	</head>
+	<body>
+		<div class="loader">
+			<div>
+				<div class="img logo"></div>
+				<div class="dots-5"></div>
+			</div>
+		</div>
+
+		<a class="button whats-app-button" href="https://wa.me/447587426936" target="thirdParty">
+			<img src="/assets/logos/whatsapp.png" />
+		</a>
+
+
+		<main>
+			<div class="hero-container">
+				<video id="heroVideo" playsinline autoplay muted loop poster="assets/hero/world-still.jpg">
+<!--					<source src="/video/world.mp4" type="video/mp4">-->
+<!--					<source src="/video/water.mp4" type="video/mp4">-->
+				</video>
+
+				<div class="hero-overlay"></div>
+			</div>
+
+			<header>
+				<a href="#Home" class="logo" aria-label="Home" role="link"></a>
+				<nav>
+					<ul>
+						<li class="hide-threshold3"><a href="mailto:info@digital-mojo.com">info@digital-mojo.com</a></li>
+						<li class="hide-threshold3"><a href="tel:+447587426936">+44 (0) 7587 426 936</a></li>
+						<li class="menu">
+							<a onclick="showMenu()" aria-label="Open menu" role="button">
+								<span class="img menu"></span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+
+			<div class="mobile-menu">
+				<ul>
+					<li>
+						<div class="img logo"></div>
+						<a class="close" onclick="hideMenu()">X</a>
+						<br />
+						<strong>MENU</strong>
+					</li>
+					<li><a class="menu-link" onclick="hideMenu()" href="#Home">Home</a></li>
+					<li><a class="menu-link" onclick="hideMenu()" href="#What">What</a></li>
+					<li><a class="menu-link" onclick="hideMenu()" href="#What">Why</a></li>
+					<li><a class="menu-link" onclick="hideMenu()" href="#How">How</a></li>
+					<li><a class="menu-link" onclick="hideMenu()" href="#Who">Who</a></li>
+				</ul>
+
+				<ul class="contact">
+					<li><a href="mailto:info@digital-mojo.com">info@digital-mojo.com</a></li>
+					<li><a href="tel:+447587426936">+44 (0) 7587 426 936</a></li>
+				</ul>
+
+			</div>
+
+			<!-- /////////////////////////////////////////////////////////////////
+
+			Home
+
+			///////////////////////////////////////////////////////////////// -->
+
+			<section id="Home" class="home">
+				<div>
+					<div class="tag-line">Quality by design</div>
+					<h1>Expert designers, coders, animators, writers & editors</h1>
+					<strong>Based in Bath, UK</strong>
+				</div>
+
+				<div class="img logo"></div>
+
+				<div class="buttons">
+					<a class="button hero"
+					   href="#What"
+					   onmouseover="showHomeText('What can we do for you?')"
+					   onmouseout="hideHomeText()">What</a>
+
+					<span class="connector"></span>
+
+					<a class="button"
+					   href="#Why"
+					   onmouseover="showHomeText('Why should you use us?')"
+					   onmouseout="hideHomeText()">Why</a>
+
+					<span class="connector"></span>
+
+					<a class="button"
+					   href="#How"
+					   onmouseover="showHomeText('How can we work together?')"
+					   onmouseout="hideHomeText()">How</a>
+
+					<span class="connector"></span>
+
+					<a class="button"
+					   href="#Who"
+					   onmouseover="showHomeText('Who are we?')"
+					   onmouseout="hideHomeText()">Who</a>
+				</div>
+
+				<div class="scroll-info">
+					<div id="homeText" class="animated fadeIn">
+					</div>
+					<div id="scrollText" class="animated fadeIn">
+						scroll down to find out more
+						<br />
+						⌄
+					</div>
+				</div>
+			</section>
+
+			<!-- /////////////////////////////////////////////////////////////////
+
+			What
+
+			///////////////////////////////////////////////////////////////// -->
+
+			<section id="What" class="what">
+				<p class="intro"><strong>Digital Mojo is a new Website Design Agency</strong> based out of Bath (UK), starting in 2022 our plan is to run it on the side, so we cannot take on too many projects.  If all goes well, we'd love to see where it takes us! Digital Mojo is run by husband and wife team, Gavin and Lorraine Jackson.</p>
+
+				<div class="img logo-icon"></div>
+
+				<br />
+
+				<div class="tag-line">We'll take the time to understand your goals</div>
+				<h2>What can we do for you?</h2>
+
+				<div class="has-2-columns">
+					<div>
+						<h3>Our expertise</h3>
+						<p><strong>We are experts in the web and have the skills to design, code and build almost anything on the internet;</strong> however we want to focus on smaller projects as we do have limited time, so websites are perfect for us as they are small coding and design projects and we are certain we can meet your expectations and will always strive to impress you and exceed them.</p>
+
+						<p>We pride ourselves on hand coding all of our websites, we fully understand, and have written all of the code we are delivering, <strong>there will be no bloat, inefficiencies or errors bringing down performance</strong>, unlike other off the shelf produced template based websites.</p>
+
+						<h3>Your requirements</h3>
+						<p>we'll take the time to understand your business and your goals, <strong>why do you want a website? what do you want it to achieve?</strong>  From this, we'll come up with a bespoke design, we'll ask you for any content or imagery ensuring you get a personalised, professional, high-end website.</p>
+
+						<p>Your website should tell your customers:
+							<br />1. <strong>What</strong> you can do for them,
+							<br />2. <strong>Why</strong> they should choose you,
+							<br />3. <strong>How</strong> they can work with you
+							<br />4. <strong>Who</strong> you are.
+							<br />Giving a clear call to action, whether that is to contact you, fill in an enquiry form or something else.
+
+						<h3>High end websites</h3>
+						<p><strong>The website we create for you will not only be beautiful, but it will be high quality, fast loading and search engine optimised.</strong>  We believe in keeping it simple, ensuring that your message is front and centre, beautifully delivered and accessible to your customers whatever device they are using.</p>
+
+						</p>
+
+
+						<a class="button hero" href="#Why">Next</a> <span class="after-button">Why should you use us?</span>
+					</div>
+
+					<div>
+						<div class="previous-work">
+							<h3>Examples of our work</h3>
+
+							<div class="scroller">
+								<a class="close" onclick="toggleFlag({type: 'remove', flag: 'showing-scroller'})">X</a>
+
+								<div id="Mollitiam" class="image-container" onclick="showImage('#Mollitiam')">
+									<img src="/assets/scroller/Mollitiam01.jpg" loading="lazy"
+									     alt="Mollitiam Consulatancy Services Website" />
+
+									<div class="caption">
+										<strong>Mollitiam Consultancy Services Website</strong>
+
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras placerat lacinia justo sed suscipit. Proin nibh diam, porttitor feugiat vehicula et, malesuada a dui. </p>
+									</div>
+
+								</div>
+
+								<div id="AboutAMum" class="image-container" onclick="showImage('#AboutAMum')">
+									<img src="/assets/scroller/AboutAMumCover.jpg" loading="lazy" data-title="Mollitiam Consulatancy Services Website" data-description="TODO" />
+								</div>
+
+								<div id="Dexter" class="image-container" onclick="showImage('#Dexter')">
+									<img src="/assets/scroller/Dexters-Surprise-Cover-v01.jpg" loading="lazy" data-title="Mollitiam Consulatancy Services Website" data-description="TODO" />
+								</div>
+
+								<div class="image-container" onclick="showImage('#AboutAMum')">
+									<img src="/assets/scroller/Mollitiam01.jpg" loading="lazy" data-title="Mollitiam Consulatancy Services Website" data-description="TODO" />
+								</div>
+
+								<div class="image-container" onclick="showImage('#AboutAMum')">
+									<img src="/assets/scroller/Mollitiam01.jpg" loading="lazy" data-title="Mollitiam Consulatancy Services Website" data-description="TODO" />
+								</div>
+
+								<div class="image-container" onclick="showImage('#AboutAMum')">
+									<img src="/assets/scroller/Mollitiam01.jpg" loading="lazy" data-title="Mollitiam Consulatancy Services Website" data-description="TODO" />
+								</div>
+							</div>
+						</div>
+
+						<div class="testimonials">
+							<h3>Testimonials</h3>
+
+							(after delivery of initial design screenshots)
+							<blockquote>
+								The website looks amazing, and so much better than the standard fodder available through ‘professionals’
+							</blockquote>
+
+							(after delivery of main site)
+							<blockquote>
+								I think the desktop and mobile version look brilliant, thanks again, I am sure I, nor any so called ‘professional’ could have got it like this. You should really do this full time!
+							</blockquote>
+
+							<strong>James Ranklin - Feb 2022</strong>
+							<br />Managing Director of Mollitiam Consultancy Services Ltd.
+							<br /><a href="https://www.mollitiam-cs.com" target="thirdParty">https://www.mollitiam-cs.com</a>
+						</div>
+
+						<div class="img code"></div>
+
+					</div>
+
+				</div>
+
+			</section>
+
+			<!-- /////////////////////////////////////////////////////////////////
+
+			Why
+
+			///////////////////////////////////////////////////////////////// -->
+
+			<section id="Why" class="why white">
+				<p class="intro">
+					Our websites are designed and built to be:
+					<br /><strong>Beautiful, performant, accessible, mobile ready, offline ready, search engine friendly, usable and more.</strong>
+				</p>
+
+				<div class="img logo-icon"></div>
+
+				<br />
+
+				<div class="tag-line">Show that you are established professionals</div>
+				<h2>Why should you use us?</h2>
+
+				<div class="has-2-columns">
+					<div>
+						<h3>Importance of a website</h3>
+
+						<p><strong>A website is how you present your business to the world</strong>, even in this age of social media, a business Facebook page is not enough, potential and existing customers will expect you to have a website and most will check it out before making a decision to further engage with you.</p>
+
+						<p>A quality website shows the world that you are serious, <strong>established professionals</strong> and have invested in getting that message across.  A poor website could send the opposite message and even harm your companies image.</p>
+
+					</div>
+
+					<div>
+						<h3>Our service</h3>
+						<p><strong>Digital Mojo wants to design and build you a high quality website</strong>, that communicates your company values and helps you grow your business.  The story doesn’t end there either, we don’t just want to build a website for you, we want an ongoing relationship.  Our years of experience tells us that once your website has been delivered, you will require regular updates as your business grows and moves on, so should your website.  That is why we have devised our pricing model, where you pay for the initial consultancy, design and build and then you have monthly peace of mind, knowing that if you want updates to your website or support, you get them.</p>
+					</div>
+				</div>
+
+				<hr />
+
+				<br />
+
+				<h3>Frequently asked questions</h3>
+
+				<div class="has-2-columns">
+					<div>
+						<details>
+							<summary>
+								Why are you more expensive than other agencies?
+							</summary>
+
+							<p>We have deliberately priced our services to reflect our considerable expertise, you will not be getting an off the shelf, templated WordPress website, you will be getting a hand coded, custom designed, beautiful, high-end website, from experts in our field and the price reflects that.</p>
+						</details>
+
+						<details>
+							<summary>
+								Will my website work on my phone / tablet?
+							</summary>
+
+							<p>Yes, absolutely, we'll make sure that your site looks beautiful, robust, and even native on mobile devices.  we'll make your website downloadable (as an App on Android or via a home page link on iOS) and even work offline!</p>
+						</details>
+
+						<details>
+							<summary>
+								Can you make my website appear first in Google?
+							</summary>
+
+							<p>No, Search Engine Optimisation/Digital Marketing is not our speciality, however the website we build for you will be very search engine friendly, we'll ensure the appropriate meta data is in place and that best practices are followed, your site content will be very accessible to search engine crawlers, ready for an SEO expert to market.</p>
+						</details>
+					</div>
+
+					<div>
+						<details>
+							<summary>
+								Can you prove your websites are high quality?
+							</summary>
+
+							<p>Yes we can, we use Lighthouse, a built-in auditing tool in Chrome to check the performance, accessibility, best practices and SEO of all of our websites and ensure that no runtime are errors thrown, we encourage you to use the Google Chrome debug tools to look at competitors websites, see if there are any errors being thrown and run an audit against our sites and compare the results.</p>
+						</details>
+
+						<details>
+							<summary>
+								Can I update my website myself?
+							</summary>
+
+							<p>No, while it is certainly possible for you to update your website, it is best left to us to update your site for you under your ongoing support.  We use a custom build tool to optimise your website for deployment and we have in place build steps which would need to be set up on your machine which would be too complex for non-developers.</p>
+						</details>
+
+						<details>
+							<summary>
+								Can I see how many visitors my site gets?
+							</summary>
+
+							<p>Yes, we'll set up Google Analytics on your site so you can see how many visitors you are getting, where they are located in the world and how they have reached your site.  we'll set you up an account and show you how to use Google Analytics.</p>
+						</details>
+					</div>
+				</div>
+
+				<hr />
+
+				<a href="#How" class="button hero">Next</a>
+				<span class="after-button">How can we work together?</span>
+
+			</section>
+
+
+			<!-- /////////////////////////////////////////////////////////////////
+
+			Image banner
+
+			///////////////////////////////////////////////////////////////// -->
+
+			<div class="image-banner" id="How">
+<!--				<div class="content">-->
+<!--					<h2>"We are passionate about getting it right first time and keeping it simple."</h2>-->
+<!--					<div class="name">-->
+<!--						James Ranklin-->
+<!--					</div>-->
+<!--					<br />-->
+<!--					<div class="title">-->
+<!--						Managing Director, Mollitiam Consultancy Services-->
+<!--					</div>-->
+<!--				</div>-->
+			</div>
+
+			<!-- /////////////////////////////////////////////////////////////////
+
+			How
+
+			///////////////////////////////////////////////////////////////// -->
+
+			<section class="how">
+				<p class="intro">It is important to us and you, that our pricing is clear and you know how much it will cost for us to build you a website. Below is our <strong>pricing table</strong> which covers the main types of projects. </p>
+
+				<div class="img logo-icon"></div>
+
+				<br />
+
+				<div class="tag-line">We want to make sure you are delighted with the end result</div>
+				<h2>How can we work together?</h2>
+
+				<p class="xintro">
+					 Initially we would like to offer two types of websites, but if that doesn’t fit with your requirements, perhaps you want online payments, or a booking system, or you want to be able to update and add content yourselves, these are all things we can build for you, so please do get in contact for a quote.
+				</p>
+
+				<h3>Pricing table</h3>
+
+				<table>
+					<thead>
+						<tr>
+							<th>Type</th>
+							<th class="right-aligned">Initial</th>
+							<th class="right-aligned">Monthly</th>
+							<th>Notes</th>
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr>
+							<td>Basic website</td>
+							<td class="right-aligned">£1,500</td>
+							<td class="right-aligned">£50</td>
+							<td>Up to 5 pages / sections.</td>
+						</tr>
+						<tr>
+							<td>Project / portfolio website</td>
+							<td class="right-aligned">£2,000</td>
+							<td class="right-aligned">£75</td>
+							<td>Up to 5 pages / sections and 5 projects.</td>
+						</tr>
+						<tr>
+							<td>Creative writing</td>
+							<td class="right-aligned">£150</td>
+							<td class="right-aligned">£0</td>
+							<td>Per section or project</td>
+						</tr>
+						<tr>
+							<td>Domain name</td>
+							<td class="right-aligned">£100</td>
+							<td class="right-aligned">£10</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Hosting</td>
+							<td class="right-aligned">£100</td>
+							<td class="right-aligned">£10</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Logo design</td>
+							<td class="right-aligned">£250</td>
+							<td class="right-aligned">£0</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Book cover</td>
+							<td class="right-aligned">£750</td>
+							<td class="right-aligned">£0</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+				<ul>
+					<li>All prices are subject to VAT.</li>
+					<li>Monthly support includes unlimited minor changes.</li>
+					<li>Minimum term is 12 months, and after that 1 months notice for cancellation.</li>
+					<li>Your website could be taken down if any payment is late.</li>
+				</ul>
+
+				<br />
+
+				<p class="intro">
+					We can build anything on the web, design anything or edit or write anything, please contact us to discuss.
+				</p>
+
+				<div class="has-3-columns">
+					<div>
+						<h3>Getting a price</h3>
+
+						<p>If you are interested in working with us, we'll send you a short survey to capture some basic information about your business, what you would like to say on the website and what your main goal is.  Once we receive that, we'll then give you a quote detailing the upfront and monthly costs, our terms and conditions and a timeline for payment and delivery.
+						</p>
+
+						<p>
+							If you decide to proceed, we'll then ask that you sign a contract, agreeing to the initial and monthly costs and ask for 25% of the initial payment upfront and once received, we'll begin building your site.
+						</p>
+					</div>
+
+					<div>
+						<h3>Meeting your requirements</h3>
+
+						<p>we'll set up a meeting, either face to face or video, depending on your location to kick off the project and make sure we are all on the same page.</p>
+
+						<p>During the build, we'll be in regular contact, we aim to get a design and skeleton site to you as quickly as possible, to ensure we are on the right track.</p>
+
+						<img src="/assets/images/notes.jpg" width="100%" alt="Taking notes" />
+					</div>
+
+					<div>
+						<h3>Delivery</h3>
+
+						<p>Once we think the site is close to completion, we'll have another meeting, where we'll walk you through the site, demonstrating its features and gathering and applying any of your feedback, we want to make sure you are delighted with the end result.</p>
+
+						<p>Once signed off, we'll invoice you for the rest of the initial payment and ask that you set up a direct debit for the monthly payments.  we'll release the website and send you a final survey to find out.</p>
+					</div>
+
+
+				</div>
+
+				<a class="button hero" href="#Who">Next</a>
+				<span class="after-button">Who are we?</span>
+			</section>
+
+
+
+			<!-- /////////////////////////////////////////////////////////////////
+
+			Who
+
+			///////////////////////////////////////////////////////////////// -->
+
+			<section id="Who" class="white who">
+				<p class="intro">
+					We are happy for you to find out about us as people, we have two kids and a puppy; feel free to check us out on:
+					Gavin or Lorraine’s Facebook pages, Gavin’s Twitter or LinkedIn account or Lorraine’s books on Amazon or her Instagram, our posts, likes and comments reflect who we are in our personal lives.
+				</p>
+
+				<div class="img logo-icon"></div>
+
+				<br />
+
+				<div class="tag-line">Our story</div>
+				<h2>Who are we?</h2>
+				<div class="has-2-columns">
+					<div>
+						<h3>Gavin is an expert coder and designer</h3>
+
+						<p><strong>Gavin has over 20 years of professional experience creating websites and web applications</strong>, he is passionate about web design, animation and user experience.  </p><p>He started his career worked in advertising, <strong>creating multi-award winning websites for some of the biggest brands in the world</strong>, including Nike, Estee Lauder and Mattel.</p> <p>Gavin has spent the last 10 years creating the frontends for complex wealth management platforms for the likes of Aegon and CanadaLife.</p><p>He sees Digital Mojo as an opportunity to go back to what he loves, website design, but using his considerable skills and experience in running multi-million pound projects.
+						</p>
+
+						<img src="/assets/avatars/gavin.png" />
+					</div>
+					<div>
+						<h3>Lorraine is a talented creative writer</h3>
+
+						<p>Lorraine writes under L M Barrett and Lorena Jackson and has <strong>self-published over 10 novels</strong>, spanning multiple genres, from thrillers to romantic comedies.</p> <p><strong>Her writing style is effortless story telling</strong>, taking the reader on a journey, while requiring them to do as little work as possible as her stories are expertly crafted for them, like brain movies!</p><p>She also has experience marketing her books primarily using Amazon ads, but has also used Facebook Ads.</p><p>She sees Digital Mojo as an opportunity to offer her creative writing skills to a whole new audience and can write or edit your website content, to ensure it flows beautifully.
+						</p>
+
+						<img src="/assets/avatars/lorraine.png" />
+					</div>
+				</div>
+			</section>
+
+
+			<!-- /////////////////////////////////////////////////////////////////
+
+			Footer
+
+			///////////////////////////////////////////////////////////////// -->
+
+			<footer>
+				<div class="has-3-columns dont-retract">
+					<div>
+						<h3>Registered address</h3>
+							28 Kensington Gardens
+							<br />Bath
+							<br />Somerset
+							<br /><a href="https://maps.google.com/maps?q=BA1 6LH" target="thirdParty">BA1 6LH</a>
+					</div>
+
+					<div>
+						<h3>Site map</h3>
+						<ul>
+							<li><a href="#Home">Home</a></li>
+							<li><a href="#What">What can we do for you?</a></li>
+							<li><a href="#Why">Why should you use us?</a></li>
+							<li><a href="#How">How can we work together?</a></li>
+							<li><a href="#Who">Who are we?</a></li>
+						</ul>
+					</div>
+
+					<div>
+						<h3>Contact</h3>
+						<ul>
+							<li><a href="mailto:info@digital-mojo.com">info@digital-mojo.com</a></li>
+							<li><a href="tel:+447587426936">+44 (0) 7587 426 936</a></li>
+						</ul>
+					</div>
+				</div>
+
+
+				<details>
+					All photos come from <a href="https://unsplash.com">Unsplash</a>.  In order of appearance:
+					<ul>
+						<li>Tree01 by <a href="https://unsplash.com/@pedrosanz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Pedro Sanz</a></li>
+
+						<li>Business01 by <a href="https://unsplash.com/@medienstuermer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Medienstürmer</a></li>
+						<li>Tree02 by <a href="https://unsplash.com/@miikkair?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Miikka Airikkala</a></li>
+
+						<li>Edinburgh by <a href="https://unsplash.com/@roanlavery?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Roan Lavery</a></li>
+
+						<li>Bridge by <a href="https://unsplash.com/@valentinbetanqr?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Valentín Betancur</a></li>
+
+						<li>Business02 by <a href="https://unsplash.com/@johnschno?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">John Schnobrich</a></li>
+
+						<li>Business03 by <a href="https://unsplash.com/@charles_forerunner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Charles Forerunner</a></li>
+					</ul>
+					<summary>
+						Asset credits
+					</summary>
+				</details>
+
+				<div class="copyright">
+					<div class="img logo"></div>
+					<br />
+					&copy; 2022 Digital Mojo ltd
+					<br />
+					Company number: 6820496
+				</div>
+			</footer>
+		</main>
+		<script type="module" src="/scripts/mojo.js"></script>
+		<script type="module" src="/main.js"></script>
+	</body>
+</html>

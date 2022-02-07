@@ -1,0 +1,156 @@
+.scroller{
+	.transition(all, 0.75s, ease-out);
+	overflow-x: scroll;
+	overflow-y: visible;
+	white-space: nowrap;
+	margin-bottom: 50px;
+	scroll-snap-type: x mandatory;
+	//scroll-padding: 0 50%;
+	padding-top: 3px;
+	padding-left: 3px;
+
+	&::-webkit-scrollbar {
+		-webkit-appearance: none;
+		height: 7px;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		//border-radius: 4px;
+		background-color: fade(@accentColor, 25%);
+	}
+
+	&:hover{
+		&::-webkit-scrollbar-thumb {
+			//border-radius: 4px;
+			background-color: fade(@accentColor, 75%);
+		}
+	}
+	
+	///////////////////////////////////////////////////////////
+	//
+	// Individual images
+	//
+	///////////////////////////////////////////////////////////
+
+	.image-container{
+		max-height: 200px;
+		scroll-snap-align: center;
+		display: inline-block;
+		cursor: pointer;
+
+		img{
+			max-height: 200px;
+		}
+
+		&:hover{
+			outline: 3px solid @accentColor;
+		}
+	}
+
+	///////////////////////////////////////////////////////////
+	//
+	// close button
+	//
+	///////////////////////////////////////////////////////////
+
+	.caption,
+	.close{
+		display: none;
+	}
+}
+
+///////////////////////////////////////////////////////////
+//
+// Full screen (showing-scroller flag)
+//
+///////////////////////////////////////////////////////////
+
+html.showing-scroller{
+	body{
+		overflow: hidden;
+	}
+
+	.scroller{
+		background-color: fade(black, 80%);
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		z-index: 99;
+		margin: 0;
+		height: 100%;
+		cursor: default;
+
+		.image-container{
+			width: 100vw;
+			height: 100vh;
+			text-align: center;
+
+			&:hover{
+				outline: none;
+			}
+
+			.caption{
+				white-space: normal;
+				text-align: justify;
+				display: block;
+				position: absolute;
+				bottom: 0;
+				color: white;
+				margin: 0 auto;
+				//max-width: 50vw;
+				left: 0;
+				right: 0;
+				height: 20vh;
+				background-color: black;
+				padding: 30px;
+				cursor: default;
+
+				strong{
+					text-align: left;
+					font-size: 30px;
+					font-weight: 400;
+				}
+			}
+
+			img{
+				position: relative;
+				top: 5vh;
+				height: 75vh;
+				max-height: none;
+				cursor: default;
+
+				&:before{
+					content: attr(alt);
+					color: red;
+					font-size: 100px;
+				}
+			}
+		}
+
+		///////////////////////////////////////////////////////////
+		//
+		// close button
+		//
+		///////////////////////////////////////////////////////////
+
+		.close{
+			.transition(all, 0.25s, ease-out);
+
+			font-size: 40px;
+			position: fixed;
+			font-weight: 100;
+			right: 40px;
+			top: 40px;
+			display: block;
+			z-index: 100;
+			cursor: pointer;
+
+			&:hover{
+				text-decoration: none;
+				color: @altColor;
+			}
+		}
+	}
+}

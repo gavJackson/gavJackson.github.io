@@ -70,12 +70,33 @@ p.intro{
 	font-size: 20px;
 	line-height: 35px;
 	margin-bottom: 25px;
+
 	border-top: 1px solid @borderColor;
 	border-bottom: 1px solid @borderColor;
 	padding-top: 25px;
 	padding-bottom: 25px;
 	color: white;
 	font-weight: 100;
+
+	@media (max-width: @threshold3) {
+		font-size: 18px;
+		line-height: 30px;
+		margin-bottom: 15px;
+		margin-top: 15px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	a{
+		text-decoration: none;
+		color: black;
+		font-weight: 400;
+
+		&:hover{
+			background-color: black;
+			color: white;
+		}
+	}
 }
 
 ///////////////////////////////////////////////////////////
@@ -113,6 +134,7 @@ h2{
 	font-weight: 300;
 	font-size: 40px;
 	margin-bottom: 30px;
+	line-height: 55px;
 
 	@media (max-width: @threshold3) {
 		margin-bottom: 20px;

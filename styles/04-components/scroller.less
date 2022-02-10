@@ -40,6 +40,7 @@
 
 		img{
 			max-height: 200px;
+			object-fit: contain;
 		}
 
 		&:hover{
@@ -117,15 +118,9 @@ html.showing-scroller{
 			img{
 				position: relative;
 				top: 5vh;
-				height: 75vh;
+				height: 90vh;
 				max-height: none;
 				cursor: default;
-
-				&:before{
-					content: attr(alt);
-					color: red;
-					font-size: 100px;
-				}
 			}
 		}
 

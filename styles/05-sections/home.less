@@ -24,14 +24,6 @@ section {
 
 			.logo {
 				grid-area: top;
-				margin-bottom: 20px !important;
-			}
-
-			h1 {
-				max-width: 450px !important;
-				margin-left: auto;
-				margin-right: auto;
-				text-align: center !important;
 			}
 
 			.scroll-info,
@@ -47,8 +39,24 @@ section {
 			text-align: left;
 			font-size: 40px;
 			line-height: 47px;
-		}
 
+			@media (max-width: @threshold2) {
+				max-width: 500px !important;
+				margin-left: auto;
+				margin-right: auto;
+				text-align: center !important;
+			}
+
+			@media (max-width: @threshold3) {
+				font-size: 30px;
+
+				max-width: 350px !important;
+			}
+
+			@media (max-width: @threshold4) {
+				font-size: 27px;
+			}
+		}
 		strong {
 			font-weight: 400;
 			font-size: 20px;
@@ -61,23 +69,28 @@ section {
 				text-align: center;
 			}
 
-			@media (max-width: @threshold4) {
+			@media (max-width: @threshold3) {
 				font-size: 20px;
 			}
 		}
 
 		.img.logo {
-			background-image: url("/assets/logos/logo-big.png");
-			width: 650px;
-			height: 225px;
+			background-image: url("/images/logos/logo-big.png");
+			width: 425px;
+			height: 250px;
 			background-size: contain;
 			background-repeat: no-repeat;
 			background-position: center bottom;
-			align-self: top;
 
+			@media (max-width: @threshold1) {
+				width: 370px;
+				background-position: center top;
+			}
 			@media (max-width: @threshold2) {
 				align-self: unset;
+				height: 220px;
 				margin: 0 auto;
+				margin-bottom: 50px;
 			}
 
 			@media (max-width: @threshold4) {

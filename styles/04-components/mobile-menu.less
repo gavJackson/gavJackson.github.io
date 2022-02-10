@@ -7,12 +7,12 @@ html.showing-menu{
 	overflow: hidden;
 
 	.mobile-menu{
-		.transition(all, 0.35s, cubic-bezier(0.16, 1, 0.3, 1));
 		.scale(1);
 
 		opacity: 1;
 		pointer-events: visible;
-		top: 70px;
+		//top: 70px;
+		.translate(0,70px);
 	}
 
 	&.scrolled-past-home{
@@ -26,6 +26,7 @@ html.showing-menu{
 	.gradient(@altColor, darken(@altColor, 35%), darken(@altColor, 15%));
 	.scale(0.5);
 	.transform-origin(50% 100%);
+	.transition(all, 0.35s, cubic-bezier(0.16, 1, 0.3, 1));
 
 	min-width: 350px;
 	opacity: 0;
@@ -42,7 +43,7 @@ html.showing-menu{
 	overflow: auto;
 
 	.img.logo{
-		background-image: url("/assets/logos/logo-small.png");
+		background-image: url("/images/logos/logo-small.png");
 		background-size: contain;
 		background-position: center center;
 		width: 300px;

@@ -1,8 +1,8 @@
 .hero-container{
 	width: 100%;
-	padding-top: 56.5%;
-	height: 0px;
-	position: absolute;
+	max-width: 1200px;
+	height: 675px;
+	position: fixed;
 
 	video,
 	.hero-overlay{
@@ -16,13 +16,18 @@
 		height: 100%;
 		border-bottom: 3px solid black;
 
+
 		@media (max-width: @widthDesktop) {
 			.rounded(0);
 		}
 	}
 
 	.hero-overlay{
-		background-image: url("/assets/hero/hero-overlay.png");
-		background-size: contain;
+		background-image: url("/images/hero/hero-overlay.png");
+		background-size: cover;
+	}
+
+	video{
+		object-fit: cover;
 	}
 }

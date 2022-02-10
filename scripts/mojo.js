@@ -101,22 +101,48 @@ window.onload = () => {
 	});
 
 	///////////////////////////////
+	// detect scroll direction
+	///////////////////////////////
+
+	let oldValue = 0;
+	let newValue = 0;
+	let videoResumeTimer;
+	window.addEventListener('scroll', () => {
+		newValue = window.pageYOffset;
+		if (oldValue < newValue) {
+			window.mojo.toggleFlag({type: 'add', flag: 'hide-header'});
+
+		} else if (oldValue > newValue) {
+			window.mojo.toggleFlag({type: 'remove', flag: 'hide-header'});
+
+		}
+
+		video.pause();
+		window.clearTimeout(videoResumeTimer);
+		videoResumeTimer = window.setTimeout(()=>{
+			video.play();
+		}, 500)
+
+		oldValue = newValue;
+	});
+
+	///////////////////////////////
 	// now load the hero video
 	///////////////////////////////
 
+	const video = document.getElementById('heroVideo');
 	window.setTimeout(() => {
-		const video = document.getElementById('heroVideo');
 
 		const sourceMP4 = document.createElement('source');
 		sourceMP4.setAttribute('src', '/video/world.mp4');
 		sourceMP4.setAttribute('type', 'video/mp4');
+		video.appendChild(sourceMP4);
 
 		const sourceWebM = document.createElement('source');
 		sourceWebM.setAttribute('src', '/video/world.webm');
 		sourceWebM.setAttribute('type', 'video/webm');
-
-		video.appendChild(sourceMP4);
 		video.appendChild(sourceWebM);
+
 		video.play();
 	}, 100);
 }

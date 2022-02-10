@@ -1,10 +1,5 @@
 
 
-//html{
-//	scroll-snap-type: y mandatory;
-//	scroll-padding: -10px;
-//}
-
 hr{
 	border-top: 1px solid mix(white, black, 30%);
 	padding-top: 10px;
@@ -13,11 +8,18 @@ hr{
 
 
 section, footer{
-	//scroll-snap-align: start;
 	min-width: 350px;
 	min-height: 400px;
 	padding: 80px 100px;
-	padding-top: 80px !important;   // this is for the menu
+	position: relative;
+
+	&:not(.home){
+		background-color: fade(black, 70%);
+	}
+
+	&:not(.after-home){
+		padding-top: 80px !important;   // this is for the menu
+	}
 
 	@media (max-width: @threshold1) {
 		padding: 40px 50px;
@@ -42,12 +44,26 @@ section, footer{
 		}
 
 		.img.logo-icon {
-			background-image: url("/assets/logos/logo-icon-black.png");
+			background-image: url("/images/logos/logo-icon-black.png");
 		}
 	}
 
-	&.blue{
-		.gradient(@accentColor, darken(@accentColor, 20%), @accentColor);
+	&.alt{
+		background-color: fade(@altColor, 70%);
+		color: mix(white, @altColor, 75%);
+
+		.tag-line{
+			color: mix(white, @altColor, 75%);
+		}
+
+		p.intro{
+			border-color: mix(white, @altColor, 75%);
+		}
+
+		a{
+			color: black;
+		}
+
 	}
 
 	///////////////////////////////////////////////////////////
@@ -57,7 +73,7 @@ section, footer{
 	///////////////////////////////////////////////////////////
 
 	.img.logo-icon{
-		background-image: url("/assets/logos/logo-icon-white.png");
+		background-image: url("/images/logos/logo-icon-white.png");
 		float: right;
 		margin-top: 0;
 		margin-left: 20px;

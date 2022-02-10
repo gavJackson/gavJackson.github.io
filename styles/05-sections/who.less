@@ -1,15 +1,32 @@
 section{
 	&.who{
-		.intro{
-			a{
-				color: black;
-				font-weight: 400;
-				text-decoration: none;
+		background-color: fade(@altColor, 70%);
 
-				&:hover{
-					color: @altColor;
-				}
-			}
+		.tag-line,
+		h2, h3{
+			text-align: center;
+		}
+		//.intro{
+		//	a{
+		//		color: black;
+		//		font-weight: 400;
+		//		text-decoration: none;
+		//
+		//		&:hover{
+		//			color: @altColor;
+		//		}
+		//	}
+		//}
+
+		.img.logo-icon{
+			float: none;
+			margin: 0 auto;
+		}
+
+		img{
+			margin: 0 auto;
+			display: block;
+			margin-bottom: 25px;
 		}
 	}
 }

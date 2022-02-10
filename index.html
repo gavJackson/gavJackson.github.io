@@ -51,7 +51,7 @@
 				right: 0;
 				top: 0;
 				bottom: 0;
-				z-index: 99;
+				z-index: 9999;
 				display: flex;
 				align-items: center;
 				justify-content: center;
@@ -105,17 +105,35 @@
 		</div>
 
 		<a class="button whats-app-button" href="https://wa.me/447587426936" target="thirdParty">
-			<img src="/assets/logos/whatsapp.png" alt="Whats App" width="40" height="40"/>
+			<img src="/images/logos/whatsapp.png" alt="Whats App" width="40" height="40"/>
 		</a>
 
 
 		<main>
+			<!-- /////////////////////////////////////////////////////////////////
+
+			Hero
+
+			///////////////////////////////////////////////////////////////// -->
+
 			<div class="hero-container">
-				<video id="heroVideo" playsinline autoplay muted loop poster="assets/hero/world-still.jpg">
+				<video id="heroVideo" playsinline autoplay muted loop poster="images/hero/world-still.jpg">
 				</video>
 
 				<div class="hero-overlay"></div>
 			</div>
+
+			<div class="top-cover">
+				<div class="left"></div>
+				<div class="center"></div>
+				<div class="right"></div>
+			</div>
+
+			<!-- /////////////////////////////////////////////////////////////////
+
+			Home
+
+			///////////////////////////////////////////////////////////////// -->
 
 			<header>
 				<a href="#Home" class="logo" aria-label="Home" role="link"></a>
@@ -214,18 +232,19 @@
 
 			///////////////////////////////////////////////////////////////// -->
 
-			<section id="What" class="what">
-				<p class="intro"><strong>Digital Mojo is a new Website Design Agency</strong> based out of Bath (UK), starting in 2022 our plan is to run it on the side, so we cannot take on too many projects.  If all goes well, we'd love to see where it takes us! Digital Mojo is run by husband and wife team, Gavin and Lorraine Jackson.</p>
+			<section id="What" class="what after-home">
+				<div class="top-gradient"></div>
+				<p class="intro animated fadeIn v-slow"><strong>Digital Mojo is a new Website Design Agency</strong> based out of Bath (UK), starting in 2022 our plan is to run it on the side, so we cannot take on too many projects.  If all goes well, we'd love to see where it takes us! Digital Mojo is run by husband and wife team, Gavin and Lorraine Jackson.</p>
 
-				<div class="img logo-icon"></div>
+				<div class="img logo-icon animated flipInY"></div>
 
 				<br />
 
-				<div class="tag-line">We'll take the time to understand your goals</div>
-				<h2>What can we do for you?</h2>
+				<div class="tag-line animated fadeIn" data-delay="1000">We'll take the time to understand your goals</div>
+				<h2 class="animated fadeInLeft">What can we do for you?</h2>
 
 				<div class="has-2-columns">
-					<div>
+					<div class="animated fadeIn slow" data-delay="1500">
 						<h3>Our expertise</h3>
 						<p><strong>We are experts in the web and have the skills to design, code and build almost anything on the internet;</strong> however we want to focus on smaller projects as we do have limited time, so websites are perfect for us as they are small coding and design projects and we're certain we can meet your expectations and will always strive to impress you and exceed them.</p>
 
@@ -250,46 +269,45 @@
 
 					<div>
 						<div class="previous-work">
-							<h3>Examples of our work</h3>
+							<h3 class="animated fadeInRight" data-delay="1000">Examples of our work</h3>
 
-							<div class="scroller">
+							<div class="scroller animated fadeInRight" data-delay="1500">
 								<a class="close" onclick="window.mojo.toggleFlag({type: 'remove', flag: 'showing-scroller'})">X</a>
 
 								<div id="Mollitiam" class="image-container" onclick="window.mojo.showImage('#Mollitiam')">
-									<img src="/assets/scroller/Mollitiam01.jpg" loading="lazy"
+									<img src="/images/scroller/Mollitiam01.jpg" loading="lazy"
 									     alt="Mollitiam Consulatancy Services Website" />
 
-									<div class="caption">
-										<strong>Mollitiam Consultancy Services Website</strong>
+<!--									<div class="caption">-->
+<!--										<strong>Mollitiam Consultancy Services Website</strong>-->
 
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras placerat lacinia justo sed suscipit. Proin nibh diam, porttitor feugiat vehicula et, malesuada a dui. </p>
-									</div>
-
+<!--										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras placerat lacinia justo sed suscipit. Proin nibh diam, porttitor feugiat vehicula et, malesuada a dui. </p>-->
+<!--									</div>-->
 								</div>
 
 								<div id="AboutAMum" class="image-container" onclick="window.mojo.showImage('#AboutAMum')">
-									<img src="/assets/scroller/AboutAMumCover.jpg" loading="lazy" alt="Mollitiam Consulatancy Services Website" data-description="TODO" />
+									<img src="/images/scroller/AboutAMumCover.jpg" loading="lazy" alt="Mollitiam Consulatancy Services Website" data-description="TODO" />
 								</div>
 
 								<div id="Dexter" class="image-container" onclick="window.mojo.showImage('#Dexter')">
-									<img src="/assets/scroller/Dexters-Surprise-Cover-v01.jpg" loading="lazy" alt="Mollitiam Consulatancy Services Website" data-description="TODO" />
+									<img src="/images/scroller/Dexters-Surprise-Cover-v01.jpg" loading="lazy" alt="Mollitiam Consulatancy Services Website" data-description="TODO" />
 								</div>
 
 								<div class="image-container" onclick="window.mojo.showImage('#AboutAMum')">
-									<img src="/assets/scroller/Mollitiam01.jpg" loading="lazy" alt="Mollitiam Consulatancy Services Website" data-description="TODO" />
+									<img src="/images/scroller/Mollitiam01.jpg" loading="lazy" alt="Mollitiam Consulatancy Services Website" data-description="TODO" />
 								</div>
 
 								<div class="image-container" onclick="window.mojo.showImage('#AboutAMum')">
-									<img src="/assets/scroller/Mollitiam01.jpg" loading="lazy" alt="Mollitiam Consulatancy Services Website" data-description="TODO" />
+									<img src="/images/scroller/Mollitiam01.jpg" loading="lazy" alt="Mollitiam Consulatancy Services Website" data-description="TODO" />
 								</div>
 
 								<div class="image-container" onclick="window.mojo.showImage('#AboutAMum')">
-									<img src="/assets/scroller/Mollitiam01.jpg" loading="lazy" alt="Mollitiam Consulatancy Services Website" data-description="TODO" />
+									<img src="/images/scroller/Mollitiam01.jpg" loading="lazy" alt="Mollitiam Consulatancy Services Website" data-description="TODO" />
 								</div>
 							</div>
 						</div>
 
-						<div class="testimonials">
+						<div class="testimonials animated fadeInRight">
 							<h3>Testimonials</h3>
 
 							(after delivery of initial design screenshots)
@@ -307,7 +325,7 @@
 							<br /><a href="https://www.mollitiam-cs.com" target="thirdParty">https://www.mollitiam-cs.com</a>
 						</div>
 
-						<div class="img code"></div>
+						<div class="img lighthouse animated fadeIn v-slow"></div>
 
 					</div>
 
@@ -322,31 +340,33 @@
 			///////////////////////////////////////////////////////////////// -->
 
 			<section id="Why" class="why white">
-				<p class="intro">
+				<p class="intro animated fadeIn v-slow">
 					Our websites are designed and built to be:
 					<br /><strong>Beautiful, performant, accessible, mobile & offline ready, search engine friendly, usable and more.</strong>
 				</p>
 
-				<div class="img logo-icon"></div>
+				<div class="img logo-icon animated flipInY"></div>
 
 				<br />
 
-				<div class="tag-line">Show that you're established professionals</div>
-				<h2>Why should you use us?</h2>
+				<div class="tag-line animated fadeIn" data-delay="1000">Show that you're established professionals</div>
+				<h2 class="animated fadeInLeft">Why should you use us?</h2>
 
 				<div class="has-2-columns">
 					<div>
-						<h3>Importance of a website</h3>
+						<h3 class="animated fadeInLeft" data-delay="1500">Importance of a website</h3>
 
-						<p><strong>A website is how you present your business to the world</strong>, even in this age of social media, a business Facebook page is not enough, potential and existing customers will expect you to have a website and most will check it out before making a decision to further engage with you.</p>
+						<p class="animated fadeInLeft" data-delay="2000"><strong>A website is how you present your business to the world</strong>, even in this age of social media, a business Facebook page is not enough, potential and existing customers will expect you to have a website and most will check it out before making a decision to further engage with you.</p>
 
-						<p>A quality website shows the world that you're serious, <strong>established professionals</strong> and have invested in getting that message across.  A poor website could send the opposite message and even harm your company's image.</p>
-
+						<img class="animated fadeInLeft" data-delay="2500" src="/images/photos/phones.jpg" alt="phones" />
 					</div>
 
 					<div>
-						<h3>Our service</h3>
-						<p><strong>We want to design and build you a high quality website, that communicates your company values and helps you grow your business.</strong>  The story doesn’t end there either, we don’t just want to build a website for you, we want an ongoing relationship.  Our years of experience tells us that once your website has been delivered, you'll require regular updates as your business grows and moves on, so should your website.  That's why we have devised our pricing model, where you pay for the initial consultancy, design and build and then you have monthly peace of mind, knowing that if you want updates to your website or support, you get them.</p>
+						<h3 class="animated fadeInRight" data-delay="1500">Our service</h3>
+						<p class="animated fadeInRight" data-delay="2000"><strong>We want to design and build you a high quality website, that communicates your company values and helps you grow your business.</strong>  The story doesn’t end there either, we don’t just want to build a website for you, we want an ongoing relationship.  Our years of experience tells us that once your website has been delivered, you'll require regular updates as your business grows and moves on, so should your website.  That's why we have devised our pricing model, where you pay for the initial consultancy, design and build and then you have monthly peace of mind, knowing that if you want updates to your website or support, you get them.</p>
+						<div class="box-out animated fadeInRight" data-delay="2500">
+							A quality website shows the world that you're serious, established professionals and have invested in getting that message across.  A poor website could send the opposite message and even harm your company's image.
+						</div>
 					</div>
 				</div>
 
@@ -354,10 +374,10 @@
 
 				<br />
 
-				<h3>Frequently asked questions</h3>
+				<h3 class="animated fadeInLeft">Frequently asked questions</h3>
 
 				<div class="has-2-columns">
-					<div>
+					<div class="animated fadeInLeft" data-delay="500">
 						<details>
 							<summary>
 								Why are you more expensive than other agencies?
@@ -383,7 +403,7 @@
 						</details>
 					</div>
 
-					<div>
+					<div class="animated fadeInRight" data-delay="1000">
 						<details>
 							<summary>
 								Can you prove your websites are high quality?
@@ -412,8 +432,8 @@
 
 				<hr />
 
-				<a href="#How" class="button hero">Next</a>
-				<span class="after-button">How can we work together?</span>
+				<a href="#How" class="button hero animated flipInX">Next</a>
+				<span class="after-button animated fadeIn" data-delay="500">How can we work together?</span>
 
 			</section>
 
@@ -424,7 +444,7 @@
 
 			///////////////////////////////////////////////////////////////// -->
 
-			<div class="image-banner" id="How"></div>
+			<div class="image-banner animated fadeIn v-slow" id="How"></div>
 
 			<!-- /////////////////////////////////////////////////////////////////
 
@@ -433,29 +453,29 @@
 			///////////////////////////////////////////////////////////////// -->
 
 			<section class="how">
-				<p class="intro">It's important to us, that our pricing is clear and you know how much it will cost for us to build you a website. Below is our <strong>pricing table</strong> which covers the main types of projects we offer. </p>
+				<p class="intro animated fadeIn v-slow">It's important to us, that our pricing is clear and you know how much it will cost for us to build you a website. Below is our <strong>pricing table</strong> which covers the main types of projects we offer. </p>
 
-				<div class="img logo-icon"></div>
+				<div class="img logo-icon animated flipInY"></div>
 
 				<br />
 
-				<div class="tag-line">We want to make sure you're delighted with the end result</div>
-				<h2>How can we work together?</h2>
+				<div class="tag-line animated fadeIn" data-delay="1000">We want to make sure you're delighted with the end result</div>
+				<h2 class="animated fadeInLeft">How can we work together?</h2>
 
-				<p>
+				<p class="animated fadeIn" data-delay="500">
 					 Initially we're offering two types of websites, but if that doesn’t fit with your requirements, perhaps you want online payments, or a booking system, or you want to be able to update and add content yourselves, these are all things we can build for you, so please get in contact for a quote.
 				</p>
 
-				<h3>Pricing table</h3>
+				<h3 class="animated fadeIn" data-delay="1000">Pricing table</h3>
 
-				<table>
+				<table class="animated fadeIn slow" data-delay="1000">
 					<caption>Digital Mojo pricing table</caption>
 					<thead>
 						<tr>
 							<th scope="col">Type</th>
 							<th scope="col" class="right-aligned">Initial</th>
 							<th scope="col" class="right-aligned">Monthly</th>
-							<th scope="col">Notes</th>
+							<th scope="col" class="note-col">Notes</th>
 						</tr>
 					</thead>
 
@@ -464,61 +484,69 @@
 							<td>Basic website</td>
 							<td class="right-aligned">£1,500</td>
 							<td class="right-aligned">£50</td>
-							<td>Up to 5 pages / sections.</td>
+							<td class="note-col">Up to 5 pages / sections.</td>
 						</tr>
 						<tr>
 							<td>Project / portfolio website</td>
 							<td class="right-aligned">£2,000</td>
 							<td class="right-aligned">£75</td>
-							<td>Up to 5 pages / sections and 5 projects.</td>
+							<td class="note-col">Up to 5 pages / sections and 5 projects.</td>
+						</tr>
+						<tr class="separator">
+							<td>Additional page / section / project</td>
+							<td class="right-aligned">£100</td>
+							<td class="right-aligned">£20</td>
+							<td class="note-col">Per section or project</td>
 						</tr>
 						<tr>
 							<td>Creative writing</td>
-							<td class="right-aligned">£150</td>
+							<td class="right-aligned">£100</td>
 							<td class="right-aligned">£0</td>
-							<td>Per section or project</td>
+							<td class="note-col">Per section or project</td>
 						</tr>
-						<tr>
+						<tr class="separator">
 							<td>Domain name</td>
 							<td class="right-aligned">£100</td>
 							<td class="right-aligned">£10</td>
-							<td></td>
+							<td class="note-col"></td>
 						</tr>
 						<tr>
 							<td>Hosting</td>
 							<td class="right-aligned">£100</td>
 							<td class="right-aligned">£10</td>
-							<td></td>
+							<td class="note-col"></td>
 						</tr>
-						<tr>
+						<tr class="separator">
 							<td>Logo design</td>
 							<td class="right-aligned">£250</td>
 							<td class="right-aligned">£0</td>
-							<td></td>
+							<td class="note-col"></td>
 						</tr>
 						<tr>
 							<td>Book cover</td>
 							<td class="right-aligned">£750</td>
 							<td class="right-aligned">£0</td>
-							<td></td>
+							<td class="note-col"></td>
 						</tr>
 					</tbody>
 				</table>
 				<ul>
-					<li>All prices are subject to VAT.</li>
-					<li>Monthly support includes unlimited minor changes.</li>
-					<li>Minimum term is 12 months, and after that 1 months notice for cancellation.</li>
-					<li>Your website could be taken down if any payment is late.</li>
+					<li class="animated fadeIn" data-delay="500">All prices are subject to VAT.</li>
+					<li class="animated fadeIn" data-delay="1000">Monthly support includes unlimited minor changes.</li>
+					<li class="animated fadeIn" data-delay="1500">Minimum term is 12 months, and after that 1 months notice for cancellation.</li>
+					<li class="animated fadeIn" data-delay="2500">Your website could be taken down if any payment is late.</li>
+					<li class="notes-point animated fadeIn" data-delay="3000">Websites contain up to 5 pages / sections</li>
+					<li class="notes-point animated fadeIn" data-delay="3500">Portfolios contain up to 5 pages / sections and 5 projects</li>
 				</ul>
 
 				<br />
 
-				<p class="intro">
+				<p class="intro animated fadeIn v-slow">
 					We can build anything on the web, design anything or edit or write anything, please contact us to discuss.
 				</p>
 
 				<div class="has-3-columns">
-					<div>
+					<div class="animated fadeIn" data-delay="500">
 						<h3>Getting a price</h3>
 
 						<p>If you're interested in working with us, we'll send you a short survey to capture some basic information about your business, what you would like to say on your website and what your main goal is.  Once we receive that, we'll then give you a quote detailing the upfront and monthly costs, our terms and conditions and a timeline for payment and delivery.
@@ -529,29 +557,27 @@
 						</p>
 					</div>
 
-					<div>
+					<div class="animated fadeIn" data-delay="1000">
 						<h3>Meeting your requirements</h3>
 
 						<p>We'll set up a meeting, either face to face or video, depending on your location to kick off the project and make sure we're all on the same page.</p>
 
 						<p>During the build, we'll be in regular contact, we aim to get a design and skeleton site to you as quickly as possible, to ensure we're on the right track.</p>
 
-						<img src="/assets/images/notes.jpg" width="100%" alt="Taking notes" />
+						<img src="/images/photos/notes.jpg" width="100%" alt="Taking notes" />
 					</div>
 
-					<div>
+					<div class="animated fadeIn" data-delay="1500">
 						<h3>Delivery</h3>
 
 						<p>Once we think the site is close to completion, we'll have another meeting, where we'll walk you through the site, demonstrating its features and gathering and applying any of your feedback, we want to make sure you're delighted with the end result.</p>
 
 						<p>Once signed off, we'll invoice you for the remainder of the initial payment and ask that you set up a direct debit for the monthly payments.  We'll release the website and send you a final survey to find out how you think we did as we're keen to grow and evolve, and learn from each of our customers.</p>
 					</div>
-
-
 				</div>
 
-				<a class="button hero" href="#Who">Next</a>
-				<span class="after-button">Who are we?</span>
+				<a class="button hero animated flipInX" href="#Who">Next</a>
+				<span class="after-button animated fadeIn" data-delay="500">Who are we?</span>
 			</section>
 
 
@@ -562,36 +588,37 @@
 
 			///////////////////////////////////////////////////////////////// -->
 
-			<section id="Who" class="white who">
-				<p class="intro">
-					We're happy for you to find out about us as people, we have two kids and a puppy; feel free to check us out on:
-					<a href="https://www.facebook.com/gavin.jackson.9028" target="thirdParty">Gavin</a> or <a href="https://www.facebook.com/lorraine.barrett.378" target="thirdParty">Lorraine’s</a> Facebook pages, Gavin’s <a href="https://twitter.com/gav_jackson" target="thirdParty">Twitter</a> or <a href="https://www.linkedin.com/in/gavin-jackson-68a7a615/" target="thirdParty">LinkedIn</a> account or Lorraine’s books on <a href="https://www.amazon.co.uk/L-M-Barrett/e/B0784JRFZG?ref=sr_ntt_srch_lnk_1&qid=1644267684&sr=8-1" target="thirdParty">Amazon</a> or her <a href="https://www.instagram.com/lmbarrettauthor/" target="thirdParty">Instagram</a>, our posts, likes and comments reflect who we are in our personal lives.
-				</p>
-
-				<div class="img logo-icon"></div>
-
-				<br />
-
-				<div class="tag-line">Our story</div>
-				<h2>Who are we?</h2>
+			<section id="Who" class="alt who">
+				<div class="tag-line animated fadeIn" data-delay="1000">About us</div>
+				<h2 class="animated flipInX">Who are we?</h2>
 				<div class="has-2-columns">
-					<div>
+					<img src="/images/avatars/gavin.png" alt="Gavin" width="150" height="150" class="animated zoomIn fast" />
+					<img src="/images/avatars/lorraine.png" alt="Lorraine" width="150" height="150" class="animated zoomIn fast" data-delay="1000" />
+				</div>
+				<div class="has-2-columns">
+					<div class="animated fadeInLeft" data-delay="1500">
 						<h3>Gavin is an expert coder and designer</h3>
 
 						<p><strong>Gavin has over 20 years of professional experience creating websites and web applications</strong>, he is passionate about web design, animation and user experience.  </p><p>He started his career worked in advertising, <strong>creating multi-award winning websites for some of the biggest brands in the world</strong>, including Nike, Estee Lauder and Mattel.</p> <p>Gavin has spent the last 10 years creating the frontends for complex wealth management platforms for the likes of Aegon and CanadaLife.</p><p>He sees Digital Mojo as an opportunity to go back to what he loves, website design, but using his considerable skills and experience in running multi-million pound projects.
 						</p>
-
-						<img src="/assets/avatars/gavin.png" alt="Gavin" width="150" height="150" />
 					</div>
-					<div>
+
+					<div class="animated fadeInRight" data-delay="2000">
 						<h3>Lorraine is a talented creative writer</h3>
 
 						<p>Lorraine writes under L M Barrett and Lorena Jackson and has <strong>self-published over 10 novels</strong>, spanning multiple genres, from thrillers to romantic comedies.</p> <p><strong>Her writing style is effortless story telling</strong>, taking the reader on a journey, while requiring them to do as little work as possible while her stories are expertly crafted for them, like brain movies!</p><p>She also has experience marketing her books primarily using Amazon ads, but has also used Facebook Ads.</p><p>She sees Digital Mojo as an opportunity to offer her creative writing skills to a whole new audience and can write or edit your website content, to ensure it flows beautifully.
 						</p>
-
-						<img src="/assets/avatars/lorraine.png" alt="Lorraine" width="150" height="150" />
 					</div>
 				</div>
+
+				<br />
+				<div class="img logo-icon animated flipInY"></div>
+				<br />
+
+				<p class="intro animated fadeIn v-slow">
+					We're happy for you to find out about us as people, we have two kids and a puppy; feel free to check us out on:
+					<a href="https://www.facebook.com/gavin.jackson.9028" target="thirdParty">Gavin</a> or <a href="https://www.facebook.com/lorraine.barrett.378" target="thirdParty">Lorraine’s</a> Facebook pages, Gavin’s <a href="https://twitter.com/gav_jackson" target="thirdParty">Twitter</a> or <a href="https://www.linkedin.com/in/gavin-jackson-68a7a615/" target="thirdParty">LinkedIn</a> account or Lorraine’s books on <a href="https://www.amazon.co.uk/L-M-Barrett/e/B0784JRFZG?ref=sr_ntt_srch_lnk_1&qid=1644267684&sr=8-1" target="thirdParty">Amazon</a> or her <a href="https://www.instagram.com/lmbarrettauthor/" target="thirdParty">Instagram</a>, our posts, likes and comments reflect who we are in our personal lives.
+				</p>
 			</section>
 
 
@@ -604,22 +631,21 @@
 			<footer>
 				<div class="has-3-columns dont-retract">
 					<div>
-						<h3>Registered address</h3>
-							28 Kensington Gardens
-							<br />Bath
-							<br />Somerset
-							<br /><a href="https://maps.google.com/maps?q=BA1 6LH" target="thirdParty">BA1 6LH</a>
-					</div>
-
-					<div>
 						<h3>Site map</h3>
 						<ul>
-							<li><a href="#Home">Home</a></li>
 							<li><a href="#What">What can we do for you?</a></li>
 							<li><a href="#Why">Why should you use us?</a></li>
 							<li><a href="#How">How can we work together?</a></li>
 							<li><a href="#Who">Who are we?</a></li>
 						</ul>
+					</div>
+
+					<div>
+						<h3>Location</h3>
+						28 Kensington Gardens
+						<br />Bath
+						<br />Somerset
+						<br /><a href="https://maps.google.com/maps?q=BA1 6LH" target="thirdParty">BA1 6LH</a>
 					</div>
 
 					<div>
@@ -633,21 +659,32 @@
 
 
 				<details>
-					World Video by Pressmaster from Pexels
-					<br />
-					<br />
-					Note taking photo by <a href="https://unsplash.com/@andrewtneel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Andrew Neel</a> on <a href="https://unsplash.com/s/photos/write-note?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+					<div class="has-3-columns">
+						<div>
+							World Video by Pressmaster from Pexels
+						</div>
+
+						<div>
+							Note taking photo by <a href="https://unsplash.com/@andrewtneel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Andrew Neel</a> on <a href="https://unsplash.com/s/photos/write-note?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+						</div>
+
+						<div>
+							Phone photo by <a href="https://unsplash.com/@camstejim?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">camilo jimenez</a> on <a href="https://unsplash.com/s/photos/important?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+						</div>
+					</div>
+
 					<summary>
 						Asset credits
 					</summary>
 				</details>
 
 				<div class="copyright">
+					<div class="right">
+						&copy; 2022 Digital Mojo ltd
+						<br />
+						Company number: 6820496
+					</div>
 					<div class="img logo"></div>
-					<br />
-					&copy; 2022 Digital Mojo ltd
-					<br />
-					Company number: 6820496
 				</div>
 			</footer>
 		</main>

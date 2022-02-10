@@ -8,6 +8,7 @@ footer{
 	.gradient(black, black, lighten(black, 10%));
 	min-width: 350px;
 	padding-top: 50px !important;
+	font-size: 14px;
 
 	.has-3-columns{
 		@media (max-width: @threshold3) {
@@ -52,6 +53,7 @@ footer{
 		margin-top: 50px;
 		margin-bottom: 10px;
 		padding-top: 30px;
+		text-align: left;
 
 		summary{
 			.no-select;
@@ -91,6 +93,7 @@ footer{
 		border-top: 1px solid fade(white, 20%);
 		padding-top: 30px;
 		text-align: left;
+		padding-bottom: 50px;
 
 		.right{
 			float: right;
@@ -99,11 +102,17 @@ footer{
 		}
 
 		.img.logo{
-			background-image: url("/assets/logos/logo-small.png");
+			background-image: url("/images/logos/logo-small.png");
 			background-size: contain;
 			width: 300px;
 			height: 60px;
 			margin-top: 0;
+			background-repeat: no-repeat;
+
+			@media (max-width: @threshold3) {
+				width: 150px;
+
+			}
 		}
 	}
 }

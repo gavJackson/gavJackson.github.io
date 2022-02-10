@@ -7,14 +7,22 @@
 
 html.scrolled-past-home{
 	header{
-		.transition();
-
-		background-color: black;//fade(black, 80%);
 		opacity: 1;
+		top: 0;
+	}
+}
+@media (max-height: @minHeight) {
+	html.hide-header{
+		header{
+			opacity: 0;
+			top: -80px;
+		}
 	}
 }
 
 header{
+	.transition(all, 0.5s, ease-in-out);
+
 	position: fixed;
 	left: 0;
 	right: 0;
@@ -23,10 +31,10 @@ header{
 	margin: 0 auto;
 	//position: sticky;
 	//margin-top: 70px;
-	top: 0;
+	top: -80px;
 	text-align: right;
 	border-bottom: 1px solid fade(white, 20%);
-	background-color: fade(black, 40%);
+	background-color: black;
 	//background-image: url("/assets/video/world-still.jpg");
 	//background-image: url("/assets/images/light.jpg");
 	background-size: cover;
@@ -45,7 +53,7 @@ header{
 	//}
 
 	.logo{
-		background-image: url("/assets/logos/logo-small.png");
+		background-image: url("/images/logos/logo-small.png");
 		background-size: contain;
 		background-repeat: no-repeat;
 		background-position: left center;
@@ -59,7 +67,7 @@ header{
 	.img.menu{
 		.opacity(0.6);
 		.transition(all, 0.75s, ease-out);
-		background-image: url("/assets/icons/menu.png");
+		background-image: url("/images/icons/menu.png");
 		background-size: contain;
 		width: 32px;
 		height: 31px;

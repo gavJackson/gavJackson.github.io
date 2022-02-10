@@ -1,25 +1,34 @@
 table{
-	width: 100%;
+	.gradient(@borderColor, fade(darken(@borderColor, 15%), 80%), fade(darken(@borderColor, 10%), 100%));
 
+	width: 100%;
 	border: 1px solid @borderColor;
-	.gradient(@borderColor, darken(@borderColor, 15%), darken(@borderColor, 10%));
+
+	tr.separator{
+		border-top: 1px solid @borderColor;
+	}
 
 	th, td{
 		padding: 5px 10px;
 		text-align: left;
 		font-weight: 300;
 		font-size: 16px;
-		color: white;
 
 		&.right-aligned{
 			text-align: right;
+		}
+
+		&.note-col{
+			@media (max-width: @threshold3) {
+				display: none;
+			}
 		}
 	}
 
 	thead{
 		th{
-			color: white;
 			border-bottom: 1px solid @borderColor;
+			font-weight: 700;
 		}
 	}
 
@@ -31,7 +40,15 @@ table{
 		}
 
 		td{
-			//font-size: 17px;
+			color: white;
 		}
+	}
+}
+
+.notes-point{
+	display: none;
+
+	@media (max-width: @threshold3) {
+		display: revert;
 	}
 }

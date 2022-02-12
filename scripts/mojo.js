@@ -18,7 +18,7 @@ if ('serviceWorker' in navigator) {
 // Utility functions / UI Handlers
 //
 ///////////////////////////////////////////////////////////
-
+let lastScrollLeft;
 window.mojo = {
 	toggleFlag: (payload) =>{
 		if(payload.type === 'add'){
@@ -37,7 +37,7 @@ window.mojo = {
 
 			window.setTimeout(() => {
 				window.location.hash = 'What';
-			}, 1);
+			}, 2000);
 		}, 1);
 	},
 
@@ -58,7 +58,33 @@ window.mojo = {
 	hideHomeText: () => {
 		document.getElementById('scrollText').style.display = 'block';
 		document.getElementById('homeText').style.display = 'none';
-	}
+	},
+
+	hideScroller: () => {
+		window.mojo.toggleFlag({type: 'remove', flag: 'showing-scroller'});
+	},
+
+	scrollRight: () => {
+		const scroller = document.getElementById('scroller');
+
+		scroller.scrollLeft += scroller.clientWidth;
+		if(scroller.scrollLeft === lastScrollLeft){
+			scroller.scrollLeft = 0;
+		}
+		lastScrollLeft = scroller.scrollLeft;
+		scroller.click();
+	},
+
+	scrollLeft: () => {
+		const scroller = document.getElementById('scroller');
+
+		scroller.scrollLeft -= scroller.clientWidth;
+		if(scroller.scrollLeft === lastScrollLeft){
+			scroller.scrollLeft = scroller.scrollWidth;
+		}
+		lastScrollLeft = scroller.scrollLeft;
+		scroller.click();
+	},
 };
 
 ///////////////////////////////////////////////////////////
@@ -150,3 +176,15 @@ window.onload = () => {
 		video.play();
 	}, 100);
 }
+
+///////////////////////////////////////////////////////////
+//
+// Close scroller with escape key
+//
+///////////////////////////////////////////////////////////
+
+document.addEventListener('keydown', function(e) {
+	if(e.keyCode == 27 && document.querySelector('html').classList.contains('showing-scroller')){
+		window.mojo.hideScroller();
+	}
+});

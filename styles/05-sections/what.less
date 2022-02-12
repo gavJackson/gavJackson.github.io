@@ -24,10 +24,11 @@ section{
 			margin-left: 0;
 			width: 100%;
 			background-repeat: no-repeat;
-			height: 400px;
+			height: 320px;
 			background-size: contain;
 			background-position: top center;
-			margin-top: 50px;
+			margin-top: 20px;
+			margin-bottom: 20px;
 
 			@media (max-width: @threshold3) {
 				height: 350px;
@@ -35,4 +36,26 @@ section{
 		}
 	}
 
+	#Sophie01{
+		img{
+			object-fit: cover;
+			object-position: center right;
+		}
+	}
+}
+
+html.showing-scroller{
+	#Sophie01{
+		img{
+			object-fit: contain;
+			object-position: center center;
+		}
+	}
+
+	section.what{
+		h1,h2,h3,.tag-line,p,.img,
+		.has-2-columns{
+			filter: blur(5px);
+		}
+	}
 }

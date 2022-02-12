@@ -34,6 +34,10 @@ window.mojo = {
 
 		window.setTimeout(() => {
 			window.location.hash = newHash;
+
+			window.setTimeout(() => {
+				window.location.hash = 'What';
+			}, 1);
 		}, 1);
 	},
 
